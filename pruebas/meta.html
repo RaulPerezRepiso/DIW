@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba con UTF-8</title>
+    <link href="css/style.css">
+</head>
+
+<body>
+    <!--Enlaces para abrir en una nueva pestaña en blanco-->
+    <p><a href="https://www.juntadeandalucia.es/" target="_blank">Junta de Andalucía</a></p>
+
+    <!--Diferentes tipos de tamaños sin CSS-->
+    <h1>¡Empezamos el curso!</h1>
+    <h2>¡Empezamos el curso!</h2>
+    <h3>¡Empezamos el curso!</h3>
+    <h4>¡Empezamos el curso!</h4>
+    <h5>¡Empezamos el curso!</h5>
+    <h6>¡Empezamos el curso!</h6>
+
+    <!--Diferentes tipos de estilo de letra sin CSS-->
+    <p>¡Empezamos el curso!</p>
+    <p><b>¡Empezamos el curso!</b></p>
+    <p><strong>¡Empezamos el curso!</strong></p> <!--Mejor usar Strog-->
+
+    <p><u>¡Empezamos el curso!</u></p>
+
+    <p><i>¡Empezamos el curso!</i></p>
+    <p><em>¡Empezamos el curso!</em></p> <!--Mejor usar Em-->
+
+    <p><del>¡Empezamos el curso!</del></p>
+
+    <!--Superíndice y Subíndice-->
+    <p>7<sup>2</sup></p>
+    <p>f<sub>(x)</sub>log</p>
+
+    <!--Resaltar el texto-->
+    <p><mark>Hola</mark></p>
+
+    <!--Manejo de fechas-->
+    <p>El 30<sup>th</sup> aniversario se celebra el <time datetime="2018-07-07">July 7</time></p>
+
+    <!--Especifica como si fuera una cita de un libro/dirección-->
+    <p>
+    <blockquote>Cita de un libro</blockquote>
+    </p>
+    <p>
+    <address>Cita para una dirección</address>
+    </p>
+
+    <!--Mostrar significado de abreviaturas-->
+    <p><abbr title="Organización mundial de la salud">OMS</abbr></p>
+
+    <!--Texto en formato código-->
+    <p><code>HTML</code></p>
+
+    <!--Deja el texto tal y como está-->
+    <p>Hola que
+        tal
+    </p>
+    <p>
+    <pre>Hola      que 
+              tal</pre>
+    </p>
+    <p>Hola que
+        tal
+    </p>
+
+    <!--Salto de línea-->
+    <br>
+
+    <!--Salidas de texto antiguas-->
+    <p><samp>Entrada de texto</samp></p>
+    <p><kbd>Salida de texto</kbd></p>
+
+    <br>
+    <!--Insercción de imagenes-->
+    <p><img src="img/logo.png" alt="Logo" height="50" width="50"></p>
+
+    <!--Gráficos vectoriales-->
+    <br>
+    <!--Circulo-->
+    <svg id="svglem" width="200" height="100">
+        <circle id="redCircle" cx="50" cy="50" r="40" stroke="blue" fill="red" stroke-width="5" opacity="0.7"></circle>
+    </svg>
+
+    <!--Rectangulo-->
+    <svg width="400" height="120">
+        <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+    </svg>
+
+    <br>
+    <!--Rectangulo gradicnte redondeado-->
+    <svg width="400" height="180">
+        <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+            style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+    </svg>
+
+    <!--Estrella -->
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+    </svg>
+
+    <!--SVG con gradiente, letras y elipse con color-->
+    <svg height="130" width="500">
+        <defs>
+            <linearGradient id="grad1">
+                <stop offset="0%" stop-color="yellow" />
+                <stop offset="100%" stop-color="red" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" /> <text fill="#ffffff" font-size="45"
+            font-family="Verdana" x="50" y="86">SVG</text>
+    </svg>
+
+    <br>
+    <!--Listas en HTML-->
+    <h2>Lista enumeradas (ol)</h2>
+    <ol>
+        <li>Primer Elemento</li>
+        <li>Segundo Elemento</li>
+        <li>Tercer Elemento</li>
+    </ol>
+
+    <h2>Lista no enumeradas (ul)</h2>
+    <ul>
+        <li>Primer Elemento</li>
+        <li>Segundo Elemento</li>
+        <li>Tercer Elemento</li>
+    </ul>
+    <br>
+    <!--Lista de definición-->
+    <h3>Terminos y Definiciones</h3>
+    <dt>Primer termino</dt>
+    <dd>Definición del primer termino</dd>
+    <dt>Segundo termino</dt>
+    <dd>Definición del segundo termino</dd>
+    <dt>Tercer termino</dt>
+    <dd>Definición del tercer termino</dd>
+
+    <!--Tablas-->
+    <table>
+        <tbody>
+            <tr>
+                <td>Alumno</td>
+                <td>Práctica</td>
+                <td>Trabajo</td>
+                <td>Final</td>
+            </tr>
+            <tr>
+                <th>Alumno1</th>
+                <td>8</td>
+                <td>8</td>
+                <td>NT (8)</td>
+            </tr>
+            <tr>
+                <th>Alumno2</th>
+                <td>8</td>
+                <td>10</td>
+                <td>SB (9)</td>
+            </tr>
+            <tr>
+                <th>Alumno3</th>
+                <td>8</td>
+                <td>6</td>
+                <td>NT (7)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td><em>Revisión de examenes: martes 18 a las 12h</em></td>
+        </tfoot>
+    </table>
+    <table>
+        <colgroup>
+            <col span="3" style="background-color: grey">
+            <col style="background-color: yellow">
+            <col style="background-color: green">
+        </colgroup>
+        <caption>Alumnos matriculados</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pepe</td>
+                <td>Pérez</td>
+                <td>Aquí</td>
+                <td>11111111</td>
+                <td>yosoy@pepe.es</td>
+            </tr>
+            <tr>
+                <td>Manuel</td>
+                <td>López</td>
+                <td>Allí</td>
+                <td>222222222</td>
+                <td>yosoy@manuel.es</td>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>Fernández</td>
+                <td>Mas allá</td>
+                <td>33333333</td>
+                <td>yosoy@maria.es</td>
+            </tr>
+            <tr>
+                <td>Sara</td>
+                <td>Gallardo</td>
+                <td>Mas aquí</td>
+                <td>44444444</td>
+                <td>yosoy@sara.es</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Pie de la tabla donde pongo más texto para que se vea como crecen</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

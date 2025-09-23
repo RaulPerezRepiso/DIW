@@ -1,0 +1,20 @@
+#uno {
+    background-color: yellow;
+}
+
+td{
+    background-color: red;
+}
+p{
+  text-align: center;
+}
+table{
+    width: 40%;
+    margin: 0 auto;
+}
+table,td,tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+

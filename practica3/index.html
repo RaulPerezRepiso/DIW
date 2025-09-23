@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>Datos Básicos</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Escribe tu nombre aquí" />
+        <label for="ps">Constraseña:</label>
+        <input type="text" name="ps" />
+        <label for="email">Email:</label>
+        <input type="text" name="email" placeholder="ej: name@gmail.es" />
+        <label for="web">Sitio Web:</label>
+        <input type="text" name="web" />
+        <label for="txt">Campo de solo lectura:</label>
+        <input type="text" name="txt" />
+        <label for="campoDes">Campo de solo lectura:</label>
+        <input type="text" name="campoDes" placeholder="Este campo no se envía" />
+    </fieldset>
+
+    <fieldset>
+        <legend>Opciones y Selecciones</legend>
+        <label for="genero">Genero: </label>
+        <input type="radio" name="genero" value="masculino" />Hombre
+        <input type="radio" name="genero" value="femenino" />Mujer
+        <input type="checkbox" name="pc"/> PC
+        <input type="checkbox" name="pc"/> Tableta
+        <label for="provincia">Provincia</label>
+        <select name="provincia">
+            <optgroup label="Aragon">
+                <option value="Z">Zaragoza</option>
+                <option>Huesca</option>
+                <option selected>Teruel</option>
+            </optgroup>
+        </select>
+    </fieldset>
+</body>
+
+</html>
