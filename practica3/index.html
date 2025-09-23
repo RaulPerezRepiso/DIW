@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
-    <fieldset>
+  <body>
+    <form action="/enviar" method="post" enctype="multipart/form-data">
+      <fieldset>
         <legend>Datos Básicos</legend>
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" placeholder="Escribe tu nombre aquí" />
@@ -17,30 +17,105 @@
         <input type="text" name="ps" />
         <label for="email">Email:</label>
         <input type="text" name="email" placeholder="ej: name@gmail.es" />
+        <label for="tlf">Teléfono:</label>
+        <input type="text" name="tlf" placeholder="+99 111 222 333" />
         <label for="web">Sitio Web:</label>
         <input type="text" name="web" />
         <label for="txt">Campo de solo lectura:</label>
-        <input type="text" name="txt" />
-        <label for="campoDes">Campo de solo lectura:</label>
-        <input type="text" name="campoDes" placeholder="Este campo no se envía" />
-    </fieldset>
+        <input
+          type="text"
+          name="txt"
+          value="Este valor no se puede cambiar"
+          readonly
+        />
+        <label for="campoDes">Campo deshabilitado:</label>
+        <input
+          type="text"
+          name="campoDes"
+          placeholder="Este campo no se envía"
+        />
+      </fieldset>
 
-    <fieldset>
+      <fieldset>
         <legend>Opciones y Selecciones</legend>
         <label for="genero">Genero: </label>
         <input type="radio" name="genero" value="masculino" />Hombre
         <input type="radio" name="genero" value="femenino" />Mujer
-        <input type="checkbox" name="pc"/> PC
-        <input type="checkbox" name="pc"/> Tableta
+        <input type="checkbox" name="pc" /> PC
+        <input type="checkbox" name="tablet" /> Tableta
+        <input type="checkbox" name="movil " /> Móvil
         <label for="provincia">Provincia</label>
         <select name="provincia">
-            <optgroup label="Aragon">
-                <option value="Z">Zaragoza</option>
-                <option>Huesca</option>
-                <option selected>Teruel</option>
-            </optgroup>
+          <optgroup label="Aragon">
+            <option value="Z">Zaragoza</option>
+            <option>Huesca</option>
+            <option selected>Teruel</option>
+          </optgroup>
         </select>
-    </fieldset>
-</body>
+        <label for="ps">Editor de código favorito:</label>
+        <input type="text" name="ps" />
+      </fieldset>
+      <fieldset>
+        <legend>Fechas, Números y Rangos</legend>
+        <label for="fecha">Fecha de Nacimiento: </label>
+        <input type="date" name="fecha" value="" />
+        <label for="hora">Hora de la cita: </label>
+        <input type="time" name="hora" value="" />
+        <label for="mes">Semana del año:</label>
+        <input type="text" name="mes" />
+        <label for="año">Mes de facturación:</label>
+        <input type="text" name="año" />
+        <label for="fechahora">Fecha y hora exactas: </label>
+        <input type="datetime-local" name="fechahora" value="" />
+        <label for="cantidad">Cantidad (entre 10 y 50, en pasos de 5): </label>
+        <input
+          type="number"
+          name="cantidad"
+          min="10"
+          max="50"
+          step="5"
+          value="25"
+        />
+        <label for="rango">Nivel de Satisfación (0-100): </label>
+        <input
+          type="range"
+          name="rango"
+          min="0"
+          max="100"
+          step="1"
+          value="55"
+        />
+        <label for="c">Color Favorito: </label>
+        <input type="color" name="c" value="#00ffff" />
+        <label for="buscar">Buscar en el sitio: </label>
+        <input name="buscar" />
+      </fieldset>
+      <fieldset>
+        <legend>Archivos, Texto y Progreso</legend>
+        <label for="subir">Subir un archivo (se pueden subir varios): </label>
+        <input type="file" name="subir" value="" />
+        <label for="coment">Comentarios: </label>
+        <textarea name="coment" cols="15" rows="4"></textarea><br /><br />
+        <label for="deter">Progeso de la barra (Determinado): </label>
+        <progress id="deter" value="60" max="100"></progress>
+        <label for="indeter">ConectaC:\DIW\DIW\practica3\image.pngdo... (Indeterminado): </label>
+        <progress id="indeter" max="100"></progress>
+      </fieldset>
+      <fieldset>
+        <legend>Acciones</legend>
+        <button type="submit">Enviar Formulario</button>
+        <button type="reset">Limpiar Campos</button>
+        <button type="button">Botón Genérico</button>
 
+        <br /><br />
+        <input
+          type="image"
+          src="image.png"
+          alt="Enviar con imagen"
+          width="100"
+        />
+        <p>O envía con esta imagen:</p>
+      </fieldset>
+    </form>
+  </body>
 </html>
