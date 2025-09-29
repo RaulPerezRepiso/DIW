@@ -1,0 +1,76 @@
+#cabecera {
+    text-align: center;
+    color: beige;
+    background-color: darkblue;
+    margin: 5%;
+}
+
+.enlace {
+    border: 1px solid black;
+    /* Arriba, Abajo, Izquierda, Derecha */
+    padding: 5px, 15px 25px, 50px;
+}
+
+main {
+    background-color: beige;
+}
+
+h2,
+h3 {
+    color: brown;
+}
+
+main p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Solo cambia su hijo inmediato nada que este dentro de otra clase*/
+main>ul {
+    font-size: 25px;
+}
+
+/* Cambia lo que hay justo después de ese h1 */
+h1+p{
+    text-align: center;
+}
+
+/* Cambia todo lo que hay detras de lo indicado */
+h2~p{
+    text-align: right;
+}
+
+/* Selecciona las cosas dependiendo del atributo que usen */
+img[width]{
+    border: 5px blue solid;
+}
+
+/* Seleccionar el valor concreto del atributo */
+img[width = "24%"]{
+    border: 5px black solid;
+}
+
+/* Solo funciona con palabras y dentro de la clase */
+img[class ~= moto]{
+    border: 15px black solid;
+}
+
+/* Funciona nombre x seguidos de - */
+div[lang |= es]{
+    margin: 5px;
+    border: 5px, blue solid;
+}
+
+/* Solo modifica los src que acaban por .png */
+img[src$=".png"]{
+    border: 5px, red solid;
+}
+
+/* Solo modifica los width que empiezan por 4 */
+img[width^="4"]{
+    border: 5px, rgb(17, 255, 0) solid;
+}
+
+/* Selecciona todas las imagenes cuyo atributo/clase contenga las subcadena que le indiquemos */
+img[class*="mo"]{
+    border: 15px, rgb(17, 255, 0) solid;
+}
