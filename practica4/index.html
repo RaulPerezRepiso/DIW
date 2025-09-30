@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas Vídeo/Audio</title>
+    <title>Elementos en bloque y en línea. Selectores</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h2>Video MP4 🎬</h2>
-    <video width="640" height="360" controls autoplay>
-        <source src="src/video.mp4" type="video/mp4">
-            <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
-    </video>
-     <h2>Video MOV 🎬</h2>
-    <video width="640" height="360" controls autoplay poster="src/img.jfif">
-        <source src="src/video2.mov" type="video/mov">
-    </video>
-        <h2>Audio en MP3 🔊</h2>
-        <audio width="640" height="360" controls>
-            <source src="src/audio.mp3" type="audio/mp3">
-            <track src="src/audio.vtt" kind="subtitles" srclang="es" label="Español" default>
-        </audio>
-        <h2>Audio en WAV 🔊</h2>
-        <audio width="640" height="360" controls>
-            <source src="src/audio2.wav" type="audio/wav">
-        </audio>
-</body>
 
+    <header>
+        <h1>El informático Digital</h1>
+        <p>Tu fuente de noticias sobre el mundo de la informática</p>
+    </header>
+
+    <nav>
+        <a href="#ultima-hora" class="nav-link">Última Hora</a></li>
+        <a href="#tecnologia" class="nav-link active">Tecnología</a></li>
+        <a href="#esports" class="nav-link">E-Sports</a></li>
+    </nav>
+
+    <main>
+        <article id="noticia-principal">
+            <h2>Avance revolucionario en la IA</h2>
+            <p>Un nuevo modelo de lenguaje ha superado todas las expectativas. <strong>Es capaz de generar texto casi indistinguible del humano.</strong></p>
+            <p>Los expertos opinan que esto cambiará <em>muchos sectores</em>. Puedes leer el <a href="/informe-completo" target="_blank">informe completo aquí</a>.</p>
+        </article>
+
+        <section id="seccion-secundaria">
+            <h3>Otras noticias de interés</h3>
+            <div class="noticia-div">
+                <h4>Nuevo sistema operativo lanzado</h4>
+                <p>La empresa <span class="empresa-tech">Gigabytech</span> ha lanzado su nuevo SO "Quantum".</p>
+                <a href="/noticias/so-quantum" class="leer-mas">Leer más...</a>
+                <div>
+                    <h5>Noticia ofrecida por Microsoft</h5>
+                </div>
+            </div>
+            <div class="noticia-div">
+                <h4>El futuro de los viajes espaciales</h4>
+                <p>Declaraciones del CEO de AstroExplorers.</p>
+                <a href="/noticias/viajes-espaciales" class="leer-mas">Leer más...</a>
+            </div>
+            <div class="noticia-div">
+                <h4>Final del campeonato de eSports</h4>
+                <p>El equipo "CyberDragons" se alza con la victoria.</p>
+                <a href="/noticias/final-esports" class="leer-mas">Leer más...</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 El informático Digital - Todos los derechos reservados.</p>
+        <p>Síguenos en <a href="https://twitter.com">Twitter</a></p>
+    </footer>
+
+</body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Vídeo/Audio</title>
+</head>
+
+<body>
+    <h2>Video MP4 🎬</h2>
+    <video width="640" height="360" controls autoplay>
+        <source src="src/video.mp4" type="video/mp4">
+            <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+    </video>
+     <h2>Video MOV 🎬</h2>
+    <video width="640" height="360" controls autoplay poster="src/img.jfif">
+        <source src="src/video2.mov" type="video/mov">
+    </video>
+        <h2>Audio en MP3 🔊</h2>
+        <audio width="640" height="360" controls>
+            <source src="src/audio.mp3" type="audio/mp3">
+            <track src="src/audio.vtt" kind="subtitles" srclang="es" label="Español" default>
+        </audio>
+        <h2>Audio en WAV 🔊</h2>
+        <audio width="640" height="360" controls>
+            <source src="src/audio2.wav" type="audio/wav">
+        </audio>
+</body>
+
+</html>
