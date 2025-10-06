@@ -1,0 +1,21 @@
+h1 {
+    column-span: all;
+    text-align: center;
+}
+
+article {
+    /* Columns lo hace todo, Column-with coge un ancho determinado y colum-count te hace columnas calculando el hancho */
+    columns: 200px;
+    column-gap: 40px;
+    column-rule: 2px solid gray;
+}
+
+figure {
+    margin: 0 0 0 0;
+}
+
+img  {
+    width: 100%;
+    height: auto;
+    break-inside: avoid;
+}

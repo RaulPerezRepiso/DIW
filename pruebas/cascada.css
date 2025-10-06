@@ -1,0 +1,59 @@
+/* div {
+    border: 2px solid black;
+    border-bottom: 1px dotted red;
+}
+
+div + p {
+    border: inherit;
+}
+
+.initial{
+    border: initial;
+}
+
+.unset {
+    border-bottom: unset;
+} */
+
+/* div p:first-child {
+    border: 2px solid black;
+    border-bottom: 1px dotted red;
+}
+
+div *:not(p) {
+    color: green;
+}
+
+div:has(p){
+    color: red;
+} */
+
+/* Colorea una p dentro de un div que no tiene span */
+div:has(p):not(:has(span)) {
+    color: blue;
+}
+
+/* Coge los hijos impares */
+/* ol li:nth-child(odd){
+    border: 1px solid black;
+} */
+
+/* ol li:nth-child(3n+1){
+    border: 1px solid black;
+} */
+
+/* ol li:nth-child(-n+4){
+    border: 1px solid black;
+} */
+
+/* ol li:nth-child(n+5){
+    border: 1px solid black;
+} */
+
+ol p:nth-of-type(3) {
+    border: 1px solid black;
+}
+
+ol *:nth-child(3) {
+    border: 1px solid black;
+}
