@@ -1,0 +1,232 @@
+/* Ejercicio 1 */
+:root {
+    --color-primario: #005c9c;
+    --color-secundario: #d9534f;
+    --gris-claro: #f4f4f4;
+    --texto-oscuro: #333;
+    --blanco: #fff;
+}
+
+/* Ejercicio 2 */
+nav a:hover {
+    background-color: var(--color-secundario);
+}
+
+/* Ejercicio 3 */
+section:target h2,
+form:target h3 {
+    color: var(--color-secundario);
+    text-decoration: underline;
+}
+
+/* Ejercicio 4  */
+input[type="email"]:required,
+input[type="text"]:required {
+    border-left: 3px solid var(--color-primario);
+}
+
+/* Ejercicio 5 */
+input[type="email"]:invalid,
+input[type="text"]:invalid {
+    border-left: 3px solid var(--color-secundario);
+}
+
+/* Ejercicio 6 */
+input[type="radio"]:checked+label,
+input[type="checkbox"]:checked+label {
+    font-weight: bold;
+    color: var(--color-primario)
+}
+
+/* Ejercicio 7 */
+input[type="checkbox"]:disabled+label {
+    font-weight: bold;
+    color: var(--gris-claro);
+    text-decoration: line-through;
+}
+
+/* Ejercicio 8 */
+.ingredientes ul li:not(:has(span)) {
+    font-weight: bold;
+    color: var(--color-secundario);
+}
+
+/* Ejercicio 9 */
+tbody tr:nth-child(odd) {
+    background-color: var(--color-secundario);
+}
+
+/* Ejercicio 10 */
+tbody tr td:first-child, thead tr th:first-child {
+    text-align: right;
+}
+
+/* Ejercicio 11 */
+aside div p:only-child{
+    border-left: 2px dotted var(--color-secundario);
+}
+
+/* Ejercicio 12 */
+aside p:empty::after{
+   content: "Más consejos próximamente...";
+}
+
+/* Ejercicio 13 */
+.pasos li:nth-child(-n+3){
+    color: #2a642a;
+}
+
+/* Ejercicio 14 */
+.pasos li:nth-last-child(-n+3){
+    color: #005a9c;
+}
+
+/* Ejercicio 15 */
+h2::after {
+    content: " >>";
+    color: var(--color-secundario);
+}
+
+/* Ejercicio 16 */
+aside div:nth-of-type(2){
+    background-color: #fffbe6;
+}
+
+/* Ejercicio 17 */
+.ingredientes ul li::marker{
+    color: #2a642a;
+    font-size: 1.2em;
+}
+
+/* Ejercicio 18 */
+div p:first-child::first-letter{
+    font-size: 6em;
+    color: var(--color-primario);
+}
+
+/* Ejercicio 19 */
+div p:first-child::first-line{
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+/* Ejercicio 20 */
+*::selection{
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--gris-claro);
+    color: var(--texto-oscuro);
+    width: 90%;
+    max-width: 1200px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-primario);
+}
+
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+/* Maquetación con Float */
+main {
+    overflow: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: var(--texto-oscuro);
+    text-align: center;
+    border-radius: 8px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    color: var(--blanco);
+}
+
+article {
+    width: 65%;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+aside {
+    width: 35%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.info-nutricional,
+form {
+    clear: both;
+    padding-top: 20px;
+}
+
+article,
+aside,
+.info-nutricional,
+form {
+    background: var(--blanco);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse:
+        collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-primario);
+    color: var(--blanco);
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--color-primario);
+    color: var(--blanco);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 90%;
+    padding: 8px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}

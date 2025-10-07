@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de Tortilla de Patatas - Avanzado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#ingredientes">Ingredientes</a></li>
+                <li><a href="#preparacion">Preparación</a></li>
+                <li><a href="#informacion">Info. Nutricional</a></li>
+                <li><a href="#valoracion">Valoración</a></li>
+            </ul>
+        </nav>
+        <h1 id="top">Receta Clásica de Tortilla de Patatas</h1>
+    </header>
+    <main>
+        <article>
+            <p>La tortilla de patatas es uno de los platos más emblemáticos de la gastronomía española. Aprende a prepararla con esta sencilla guía.</p>
+            
+            <section id="ingredientes" class="ingredientes">
+                <h2>Ingredientes</h2>
+                <ul>
+                    <li>Huevos (6 unidades)</li>
+                    <li>Patatas (3 unidades grandes)</li>
+                    <li>Cebolla (1 unidad) <span>(Opcional)</span></li>
+                    <li>Aceite de oliva virgen extra</li>
+                    <li>Sal</li>
+                </ul>
+            </section>
+            
+            <section id="preparacion" class="pasos">
+                <h2>Preparación</h2>
+                <ol>
+                    <li>Pela y corta las patatas en láminas finas.</li>
+                    <li>Pica la cebolla finamente (si la usas).</li>
+                    <li>Fríe las patatas (y la cebolla) a fuego lento en abundante aceite hasta que estén tiernas.</li>
+                    <li>Bate los huevos en un bol grande y añade sal.</li>
+                    <li>Escurre bien las patatas y mézclalas con el huevo batido.</li>
+                    <li>Cuaja la tortilla en una sartén por ambos lados hasta que esté dorada.</li>
+                    <li>¡Servir y disfrutar!</li>
+                </ol>
+            </section>
+        </article>
+        
+        <aside>
+            <h3>Consejos Útiles</h3>
+            <div>
+                <p>Para una tortilla más jugosa, no la cuajes en exceso. ¡El interior debe quedar meloso!</p>
+            </div>
+            <div>
+                 <p>Puedes visitar <a href="https://www.recetasderechupete.com/" target="_blank" lang="es">más recetas</a> para inspirarte.</p>
+                 <p lang="en">Check also <a href="https://www.spainonafork.com/" target="_blank">recipes in English</a>.</p>
+            </div>
+            <p></p> </aside>
+
+        <section id="informacion" class="info-nutricional">
+            <h2>Información Nutricional (por ración)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nutriente</th>
+                        <th>Cantidad</th>
+                        <th>% Valor Diario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Calorías</td>
+                        <td>350 kcal</td>
+                        <td>18%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteínas</td>
+                        <td>15 g</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas</td>
+                        <td>25 g</td>
+                        <td>38%</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>20 g</td>
+                        <td>7%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <form id="valoracion">
+            <h3>¿Te gustó la receta?</h3>
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Mínimo 3 caracteres..." required minlength="3">
+            
+            <label for="email">Tu email:</label>
+            <input type="email" id="email" name="email" placeholder="email@dominio.com" required>
+
+            <label for="email2">email 2:</label>
+            <input type="email" id="email2" name="email2" placeholder="email@dominio.com">
+            
+            <p>¿Añadirías cebolla?</p>
+            <input type="radio" name="cebolla" id="si-cebolla" value="si"><label for="si-cebolla">Sí, ¡con cebolla siempre!</label><br>
+            <input type="radio" name="cebolla" id="no-cebolla" value="no"><label for="no-cebolla">No, sin cebolla es la auténtica.</label>
+
+            <p>Marca los extras que añadirías:</p>
+            <input type="checkbox" name="extras" id="chorizo" value="chorizo"><label for="chorizo">Chorizo</label><br>
+            <input type="checkbox" name="extras" id="pimientos" value="pimientos"><label for="pimientos">Pimientos</label><br>
+            <input type="checkbox" name="extras" id="queso" value="queso" disabled><label for="queso">Queso (Próximamente)</label>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>Receta elaborada para la práctica de DIW. <a href="#top">Volver arriba</a></p>
+    </footer>
+</body>
+</html>
