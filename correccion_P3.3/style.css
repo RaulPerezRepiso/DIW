@@ -1,0 +1,67 @@
+:root {
+    --color-primario: #0A4A7A;
+    --color-secundario: #008CBA;
+    --color-fondo: #f4f4f4;
+    --color-texto: #333;
+    --color-blanco: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* CABECERA */
+.cabecera {
+    background-color: var(--color-primario);
+    overflow: y auto;
+}
+
+.cabecera h1 {
+    float: left;
+}
+
+.navegacion{
+    float: right;
+}
+
+/* CUERPO */
+body {
+    background-color: var(--color-fondo);
+}
+
+/* MAIN */
+.principal{
+    float: left;
+    width: 65%;
+}
+
+/* ASIDE */
+.lateral{
+    float: right;
+    width: 30%;
+}
+
+/* IMÁGENES */
+.imagen-articulo{
+    width: 400px;
+}
+
+.imagen-perfil{
+    width: 100px;
+}
+
+.flota-der{
+    float: left;
+}
+
+.float-izq{
+    float: right;
+}
+
+/* PIE */
+footer {
+    background-color: var(--color-texto);
+    clear: both;
+}

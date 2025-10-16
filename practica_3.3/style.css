@@ -60,17 +60,21 @@ nav a:hover {
 }
 
 main {
-    width: 53%;
+    margin-top: 15px;
+    width: 42%;
     float: left;
+    margin-left: 20%;
 }
 
 aside {
-    width: 42%;
-    float: right;   
+    width: 20%;
+    float: right;  
+    margin-right: 200px; 
 }
 
 section{
     margin-top: 35px;
+    border-radius: 15px;
 }
 section>p{
     margin-top: 14px;
