@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="cabecera">
+    <header class="cabecera">
+        <div class="contenedor">
             <h1>Aventuras por el mundo</h1>
             <nav class="navegacion">
                 <ul>
@@ -22,7 +22,7 @@
             </nav>
         </div>
     </header>
-    <div>
+    <div class="contenedor">
         <main class="principal">
             <article class="articulo">
                 <h2>Explorando las montañas noruegas</h2>
@@ -34,6 +34,7 @@
                     en aguas tranquilas y profundas crean un paisaje que parece sacado de un cuento de hadas. La primera
                     parada fue en Geirangerfjord, un sitio declarado Patrimonio de la Humanidad por la UNESCO. Las rutas
                     de senderismo son abundantes y ofrecen vistas espectaculares a cada paso.</p>
+                <br>
                 <p>Es crucial llevar buen calzado y estar preparado para cambios climáticos repentinos, incluso en
                     verano, para disfrutar al máximo de la majestuosidad de la naturaleza noruega.</p>
             </article>
@@ -47,6 +48,7 @@
                     con la modernidad. El mercado de Nishiki, conocido como "la cocina de Kioto", es un festín para los
                     sentidos. Un pasillo estrecho lleno de puestos que venden de todo, desde encurtidos locales hasta
                     marisco fresco y dulces tradicionales.</p>
+                <br>
                 <p>Pasear por el barrio de Gion al atardecer ofrece la posibilidad de ver a alguna geisha o maiko
                     dirigiéndose a sus citas. Es un recordatorio viviente de la rica historia cultural de la ciudad.</p>
                 <p>Soy un viajero apasionado por descubrir nuevas culturas y paisajes. ¡Acompáñame en esta aventura!</p>
@@ -55,54 +57,62 @@
         <aside class="lateral">
             <section>
                 <h3>Sobre mí</h3>
-                <hr>
+
                 <figure>
-                    <img class="imagen-perfil" class="autor" src="autor.jpg">
+                    <img class="imagen-perfil" alt="Foto del autor" src="autor.jpg">
                 </figure>
                 <p>Soy un viajer apasionado por descubrir nuevas culturas y paisajes</p>
                 <p>¡Acompáñame en esta aventura!</p>
             </section>
             <section>
-                <h3>Subscribete a la Newsletter</h3>
-                <hr>
-                <label for="email">Tu correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="email@ejemplo.com" required>
-                <button>Suscribirme</button>
+                <h3>Subscríbete a la Newsletter</h3>
+                <form action="">
+                    <label for="email">Tu correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="email@ejemplo.com" required>
+                    <button>Suscribirme</button>
+                </form>
             </section>
             <section>
                 <h3>Próximos Destinos</h3>
-                <hr>
                 <table>
-                    <tr>
-                        <th>Páis</th>
-                        <td>Perú</td>
-                        <td>Egipto</td>
-                        <td>Islandia</td>
-                        <td>Tailandia</td>
-                    </tr>
-                    <tr>
-                        <th>Mes</th>
-                        <td>Marzo</td>
-                        <td>Mayo</td>
-                        <td>Agosto</td>
-                        <td>Noviembre</td>
-                    </tr>
-                    <tr>
-                        <th>Precio Aprox.</th>
-                        <td>1500€</td>
-                        <td>1200€</td>
-                        <td>2000€</td>
-                        <td>1300€</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Mes</th>
+                            <th>Precio Aprox.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Perú</td>
+                            <td>Marzo</td>
+                            <td>1500€</td>
+                        </tr>
+                        <tr>
+                            <td>Egipto</td>
+                            <td>Mayo</td>
+                            <td>1200€</td>
+                        </tr>
+                        <tr>
+                            <td>Islandia</td>
+                            <td>Agosto</td>
+                            <td>2000€</td>
+                        </tr>
+                        <tr>
+                            <td>Tailandia</td>
+                            <td>Noviembre</td>
+                            <td>1300€</td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
         </aside>
     </div>
-    <div>
-        <footer>
+    <footer>
+        <div class="contenedor">
             <p>&copy; 2025 Blog de Aventuras. Diseñado por <a href="#">Raúl Pérez</a></p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>

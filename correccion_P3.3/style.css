@@ -4,6 +4,8 @@
     --color-fondo: #f4f4f4;
     --color-texto: #333;
     --color-blanco: #fff;
+    --fuente-titulo: "Georgia, serif";
+    --fuente-cuerpo: "Arial";
 }
 
 * {
@@ -12,56 +14,240 @@
     border: 0;
 }
 
+/* CONTENEDOR */
+.contenedor {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 /* CABECERA */
 .cabecera {
     background-color: var(--color-primario);
-    overflow: y auto;
+    overflow-y: auto;
 }
 
 .cabecera h1 {
     float: left;
+    color: var(--color-blanco);
+    font-family: var(--fuente-titulo);
+    margin-bottom: 25px;
 }
 
-.navegacion{
+.cabecera div {
+    margin: 25px;
+}
+
+.navegacion {
     float: right;
 }
+
+.navegacion li {
+    display: inline;
+}
+
+.navegacion ul {
+    display: inline;
+    margin-top: 10px;
+}
+
+.navegacion a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.navegacion a:hover {
+    color: var(--color-primario);
+    background-color: var(--color-blanco);
+    border-radius: 5px;
+}
+
+.navegacion a::before {
+    content: "· ";
+    /*Siempre debe acompañar a una pseudoclase Before o After */
+}
+
+.navegacion a::after {
+    content: " ·";
+    /*Siempre debe acompañar a una pseudoclase Before o After */
+}
+
 
 /* CUERPO */
 body {
     background-color: var(--color-fondo);
+    font-family: var(--fuente-cuerpo);
+    text-align: justify;
+}
+
+.articulo {
+    margin: 15px;
+    background-color: var(--color-blanco);
+    border-radius: 5px;
+    padding-bottom: 25px;
+}
+
+.articulo h2 {
+    font-family: var(--fuente-titulo);
+    color: var(--color-primario);
+    margin: 20px;
+    padding: 20px;
+}
+
+.articulo p {
+    margin: 0 20px;
+}
+
+.articulo figure+p::first-letter {
+    font-size: 3em;
+    color: var(--color-secundario);
+    font-family: var(--fuente-titulo);
+    font-weight: bold;
+    float: left;
+    margin-top: -10px;
+    margin-bottom: -15px;
+}
+
+.articulo figcaption {
+    text-align: right;
+    font-size: 0.8em;
+    color: darkgray;
 }
 
 /* MAIN */
-.principal{
+.principal {
     float: left;
     width: 65%;
 }
 
+
 /* ASIDE */
-.lateral{
+.lateral {
     float: right;
     width: 30%;
 }
 
+.lateral section {
+    margin: 15px 15px 15px 0;
+    background-color: var(--color-blanco);
+    border-radius: 5px;
+    padding-bottom: 25px;
+}
+
+h3 {
+    font-family: var(--fuente-titulo);
+    color: var(--color-secundario);
+    margin: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid gray;
+}
+
+aside form label {
+    margin-left: 20px;
+}
+
+aside form input[type="email"] {
+    width: 80%;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid var(--color-secundario);
+}
+
+aside form button {
+    width: 87%;
+    padding: 10px;
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 4px;
+    color: var(--color-blanco);
+    font-weight: bold;
+}
+
+.lateral form input[type="email"]:invalid {
+    box-shadow: 0 0 10px red;
+}
+
+
+/*TABLA*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead th {
+    background-color: rgb(233, 233, 233);
+    border-bottom: 2px dotted black;
+}
+
+thead tr {
+    background-color: rgb(233, 233, 233);
+    border-bottom: 2px dotted black;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgb(233, 233, 233);
+    border-bottom: 2px dotted black;
+}
+
 /* IMÁGENES */
-.imagen-articulo{
+.imagen-articulo {
     width: 400px;
 }
 
-.imagen-perfil{
+.imagen-perfil:hover {
+    box-shadow: 0 0 5px var(--color-secundario);
+}
+
+.imagen-perfil {
     width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
-.flota-der{
-    float: left;
-}
-
-.float-izq{
+.flota-der {
     float: right;
+    margin-right: 25px;
+    margin-left: 10px;
 }
+
+.flota-iz {
+    float: left;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
 
 /* PIE */
 footer {
     background-color: var(--color-texto);
     clear: both;
+    padding: 20px;
+    color: var(--color-blanco);
+    text-align: center;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-secundario)
+}
+
+footer a::after {
+    content: " ·";
 }
