@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Fixed</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .div-ppal{
+            background-color: aqua;
+        }
+
+        .div-secun {
+            position: fixed; /*La posición fixed cambia las posicon como yo quiero respecto al documento*/
+            top: 50px;
+            right: 50px;
+            background-color: pink;
+        }
+
+        .div-ter{
+            background-color: purple;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="div-ppal">Div Principal</div>
+    <div class="div-secun">Div Secundario</div>
+    <div class="div-ter">Div Tercero</div>
+
+</body>
+
+</html>

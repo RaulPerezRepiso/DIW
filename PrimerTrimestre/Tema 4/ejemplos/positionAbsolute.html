@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+    <style>
+        div {
+            width: 150px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .div-padre {
+            margin: 200px;
+            position: relative;
+            background-color: aqua;
+        }
+
+        .div-hijo {
+            /*La posición absolute cambia las posicon del documento para colocarse a la posicon y dimensinoes que tiene el padre (Padre tiene que tener relative) */
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            background-color: pink;
+        }
+
+        .div-ter {
+            margin-left: 200px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-padre">Div Padre
+        <div class="div-hijo">Div Hijo</div>
+    </div>
+    <div class="div-ter">Div Tercero</div>
+
+</body>
+
+</html>

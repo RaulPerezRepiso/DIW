@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Content</title>
+    <style>
+        .div-ppal{
+            width: 500px;
+            height: 400px;
+            background-color: yellowgreen;
+        }
+
+        .div-secun{
+            /* display: contents; */  /*Desaparecen las propiedades del hijo solo se muestran las del padre*/
+            width: 400px;
+            height: 300px;
+            background-color: orangered;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="div-ppal">
+        Div Principal
+        <div class="div-secun">
+            Div Secundarío
+            <p>Párrafo 1</p>
+            <p>Párrafo 2</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Table</title>
+    <style>
+        .tabla-fila {
+            display: table-row;
+        }
+
+        .caja {
+            width: 20%;
+            background-color: aquamarine;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        .celda {
+            display: table-cell; /*Propiedad que autoconvierte las celdas en filas maquetando en orden */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="tabla-fila">
+        <div class="caja celda">
+            Elemento 1
+            <p>Este es el primer elemento</p>
+        </div>
+        <div class="caja celda">
+            Elemento 2
+            <button>Haz click aquí</button>
+        </div>
+        <div class="caja celda">
+            Elemento 3
+            <label for="nombre">Introduce tu nombre</label>
+            <input type="text" name="nombre">
+        </div>
+    </div>
+</body>
+
+</html>

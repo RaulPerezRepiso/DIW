@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        .div-ppal{
+            background-color: aqua;
+        }
+
+        .div-secun {
+            position: relative; /*La posición relative impide que se ocupe su espacio aunque no este en el*/
+            bottom: 50px;
+            left: 10px;
+            background-color: pink;
+        }
+
+        .div-ter{
+            background-color: purple;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="div-ppal">Div Principal</div>
+    <div class="div-secun">Div Secundario</div>
+    <div class="div-ter">Div Tercero</div>
+
+</body>
+
+</html>

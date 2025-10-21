@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Z-Index</title>
+    <style>
+        div {
+            width: 150px;
+            padding: 20px;
+            margin: 5px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .div-ppal {
+            position: relative;
+            background-color: aqua;
+            /*El z-index lo que hace es colocar las capas dependiendo del porcentaje que le demos */
+            z-index: 40;
+        }
+
+        .div-secun {
+            position: relative;
+            bottom: 25px;
+            left: 25px;
+            background-color: pink;
+            z-index: 35;
+        }
+
+        .div-ter {
+            position: relative;
+            bottom: 50px;
+            left: 50px;
+            background-color: blueviolet;
+            z-index: 30;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-ppal">Div Principal</div>
+    <div class="div-secun">Div Secundario</div>
+    <div class="div-ter">Div Tercero</div>
+</body>
+
+</html>
