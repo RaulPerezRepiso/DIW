@@ -1,16 +1,133 @@
-.cabecera {
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* CABECERA */
+.contenedorCabecera::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cabecera figure {
+    float: left;
+}
+
+header {
+    overflow-y: auto;
     border-bottom: 5px solid gainsboro;
 }
 
-.header-iz{
-    
+.navegacionIz {
+    margin: 2%;
+    float: left;
 }
 
-.header-der{
-
-
+.navegacionDer {
+    margin: 2%;
+    float: right;
 }
 
-.simbolo{
-    width: 25%;
+.navegacionIz li,
+.navegacionDer li {
+    display: inline;
+}
+
+
+.navegacionIz a,
+.navegacionDer a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navegacionIz a::after,
+.learn::after {
+    content: " ⇩";
+}
+
+.free {
+    background-color: blue;
+    color: white;
+    border-radius: 8%;
+    box-shadow: 0 0 5px black;
+}
+
+/* CUERPO */
+.contenedorCuerpo1,
+.contenedorCuerpo2 {
+    overflow: hidden;
+    margin-top: 2%;
+}
+
+.texto {
+    text-align: left;
+    margin-top: 5%;
+    margin-right: 20%;
+}
+
+span {
+    color: blue;
+    margin-right: 100%;
+}
+
+strong::after {
+    content: " ⇨";
+}
+
+/* IMG */
+.simbolo {
+    width: 120px;
+    margin: 15%;
+    vertical-align: middle;
+}
+
+.explorador {
+    width: 75%;
+}
+
+.movil {
+    width: 90%;
+}
+
+.imgF1,
+.imgF2 {
+    float: left;
+    margin-left: 20%;
+}
+
+.cursiva{
+    width: 5%;
+}
+
+.search{
+    width: 10%;
+}
+
+.cami1, .cami2, .cami3 {
+    width: 5%;
+}
+
+.facebook {
+    width: 10%;
+}
+
+.desierto{
+    width: 5%;
+}
+
+.google{
+    width: 22%;
+}
+
+.zapa1{
+    width: 8%;
+}
+
+.zapa2{
+    width: 8%;
 }
