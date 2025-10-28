@@ -1,133 +1,264 @@
+/* ============================================================
+   RESET GENERAL Y CONFIGURACIÓN BASE
+============================================================ */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-/* CABECERA */
+/* ============================================================
+   CABECERA
+============================================================ */
+header {
+  overflow-y: auto;
+  border-bottom: 5px solid gainsboro;
+}
+
+.contenedorCabecera {
+  width: 100%;
+  overflow: hidden;
+}
+
 .contenedorCabecera::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .cabecera figure {
-    float: left;
+  float: left;
 }
 
-header {
-    overflow-y: auto;
-    border-bottom: 5px solid gainsboro;
+.imgSho {
+  float: left;
+}
+
+.simbolo {
+  width: 120px;
+  margin: 15%;
+  vertical-align: middle;
 }
 
 .navegacionIz {
-    margin: 2%;
-    float: left;
+  float: left;
+  margin: 2%;
 }
 
 .navegacionDer {
-    margin: 2%;
-    float: right;
+  float: right;
+  margin: 2%;
 }
 
 .navegacionIz li,
 .navegacionDer li {
-    display: inline;
+  display: inline;
 }
-
 
 .navegacionIz a,
 .navegacionDer a {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
 }
 
 .navegacionIz a::after,
 .learn::after {
-    content: " ⇩";
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("img/flecha-hacia-abajo\ \(1\).png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+  vertical-align: middle;
 }
 
 .free {
-    background-color: blue;
-    color: white;
-    border-radius: 8%;
-    box-shadow: 0 0 5px black;
+  background-color: blue;
+  color: white;
+  border-radius: 8%;
+  box-shadow: 0 0 5px black;
 }
 
-/* CUERPO */
+/* ============================================================
+   CUERPO PRINCIPAL
+============================================================ */
+body {
+  background-color: darkgrey;
+}
+
 .contenedorCuerpo1,
 .contenedorCuerpo2 {
-    overflow: hidden;
-    margin-top: 2%;
-}
-
-.texto {
-    text-align: left;
-    margin-top: 5%;
-    margin-right: 20%;
-}
-
-span {
-    color: blue;
-    margin-right: 100%;
-}
-
-strong::after {
-    content: " ⇨";
+  overflow: hidden;
+  margin-top: 2%;
+  width: 100%;
 }
 
 /* IMG */
-.simbolo {
-    width: 120px;
-    margin: 15%;
-    vertical-align: middle;
+.img {
+  position: relative;
+  float: left;
+  width: 55%;
+  margin-left: 5%;
+  margin-right: 0;
 }
 
 .explorador {
-    width: 75%;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .movil {
-    width: 90%;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 10%;
 }
 
-.imgF1,
-.imgF2 {
-    float: left;
-    margin-left: 20%;
+/* Sección de texto alineada a la derecha */
+.texto {
+  float: right;
+  width: 35%;
+  margin-top: 5%;
+  margin-right: 5%;
+  text-align: left;
 }
 
-.cursiva{
-    width: 5%;
+span {
+  color: blue;
+  margin-right: 100%;
 }
 
-.search{
-    width: 10%;
+strong::after {
+  content: " ⇨";
 }
 
-.cami1, .cami2, .cami3 {
-    width: 5%;
+/* ============================================================
+   POSICIONAMIENTO DE IMÁGENES HIJAS
+============================================================ */
+
+.hijas img {
+  position: absolute;
 }
 
+/* DIV 1 */
+.cursiva {
+  width: 13%;
+  top: 13%;
+  left: 19%;
+}
+
+.search {
+  width: 20%;
+  top: 12%;
+  left: 57%;
+}
+
+.cami1 {
+  width: 10%;
+  top: 60%;
+  left: 68%;
+  border: 2px solid black;
+}
+
+.cami2 {
+  width: 10%;
+  top: 68%;
+  left: 45%;
+  border: 2px solid black;
+}
+
+.cami3 {
+  width: 10%;
+  top: 68%;
+  left: 30%;
+  border: 2px solid black;
+}
+
+.olas {
+  width: 8.5%;
+  top: -2.4%;
+  left: 45.9%;
+}
+
+.bolsa {
+  width: 4%;
+  top: 2%;
+  left: 69.2%;
+}
+
+.menu {
+  width: 4%;
+  top: 2%;
+  left: 26%;
+}
+
+.check {
+  width: 4%;
+  top: 15%;
+  left: 72%;
+}
+
+.cuadrado {
+  width: 10%;
+  top: 68%;
+  left: 57%;
+}
+
+/* DIV 2 */
 .facebook {
-    width: 10%;
+  width: 30%;
+  top: 1%;
+  left: 15%;
 }
 
-.desierto{
-    width: 5%;
+.desierto {
+  width: 20%;
+  top: 10%;
+  left: 20%;
 }
 
-.google{
-    width: 22%;
+.google {
+  width: 20%;
+  top: 32%;
+  left: 60%;
 }
 
-.zapa1{
-    width: 8%;
+.zapa1 {
+  width: 14%;
+  top: 48%;
+  left: 57%;
 }
 
-.zapa2{
-    width: 8%;
+.zapa2 {
+  width: 17%;
+  top: 51%;
+  left: 72%;
+}
+
+.logoF {
+  width: 3%;
+  top: 3%;
+  left: 40%;
+}
+
+.logoG {
+  width: 3%;
+  top: 35%;
+  left: 61.5%;
+}
+
+.micro {
+  width: 3%;
+  top: 34%;
+  left: 76%;
+}
+
+.bolsa2 {
+  width: 3%;
+  top: 43%;
+  left: 16%;
 }
