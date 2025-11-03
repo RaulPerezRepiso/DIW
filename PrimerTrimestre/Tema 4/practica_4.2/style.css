@@ -1,0 +1,260 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* CUERPO */
+body {
+    background-color: #e6e6fa;
+}
+
+/* CABECERA */
+.cabecera {
+    background-color: whitesmoke;
+    border-radius: 50px;
+    margin: 2% auto;
+    width: 90%;
+    overflow: visible;
+    box-shadow: 0 20px 10px darkgrey;
+    z-index: 1;
+}
+
+/* SUBMENU */
+.menu-central>li {
+    display: inline-block;
+}
+
+.submenu {
+    position: absolute;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+    margin-top: 20%;
+    z-index: 1000;
+    border-radius: 50px;
+    width: 1000px;
+    height: 1000px;
+}
+
+.menu-central li a:hover {
+    background-color: #fff7df;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.contenedorCabecera ul li a.platform:hover::after {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+/* Mostrar el submenú al pasar el cursor por el contenedor o el submenú */
+.tiene-submenu:hover .submenu,
+.tiene-submenu .submenu:hover {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    background-color: whitesmoke;
+}
+
+/* Estilo de los enlaces del submenú */
+.submenu li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+.contenedorCabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    width: 100%;
+    overflow: visible;
+    position: relative;
+}
+
+.contenedorCabecera::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ZONAS */
+.zona-izquierda,
+.zona-centro,
+.zona-derecha {
+    height: 100%;
+}
+
+/* IZQUIERDA */
+.zona-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 8%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logo:hover {
+    animation: girar 1s linear infinite;
+}
+
+.marca {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* CENTRO */
+.zona-centro {
+    width: 55%;
+    padding: 5px;
+    text-align: left;
+}
+
+.menu-central {
+    list-style: none;
+    position: relative;
+}
+
+.menu-central li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu-central a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-central .platform::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("img/flecha-hacia-abajo\ \(1\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* DERECHA */
+.zona-derecha {
+    width: 25%;
+    text-align: right;
+    padding-top: 5px;
+    margin-left: 25px;
+}
+
+.menu-derecha {
+    list-style: none;
+}
+
+.menu-derecha li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu-derecha a {
+    text-decoration: none;
+    color: blue;
+}
+
+a.boton-demo {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+/* PRIMERO */
+.primero {
+    width: 100%;
+}
+
+.primero p {
+    text-align: center;
+    margin: auto 30%;
+    border: 1px solid purple;
+    background-color: #e6e6fa;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 20px 10px darkgrey;
+}
+
+/* SEGUNDO */
+.segundo {
+    margin: 5% 35% 0 35%;
+    position: relative;
+    height: 300px;
+    text-align: center;
+}
+
+.segundo a.boton-demo {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/* P */
+.p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/* TERCERO */
+.tercero {
+    margin: 15% 35% 0 35%;
+    position: relative;
+    height: 150px;
+    text-align: center;
+}
+
+.tercero h1 {
+    font-weight: 100;
+}
+
+.tercero p {
+    font-size: 0.7em;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 25%;
+    margin-left: 40%;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+
+/* CUARTO */
+.p .tercero .cuarto {
+    background-color: coral;
+}
