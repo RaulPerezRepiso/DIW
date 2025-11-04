@@ -254,7 +254,163 @@ a.boton-demo {
     margin-bottom: 5%;
 }
 
+/* TABLAS */
+.tabla {
+    display: table;
+    margin: 0 auto;
+    width: 80%;
+    border-spacing: 20px;
+    /* separa las celdas */
+}
+
+.fila {
+    display: table-row;
+}
+
+.celda {
+    display: table-cell;
+    background-color: rgb(236, 231, 225);
+    border-radius: 20px;
+}
+
+.celda h1 {
+    font-size: 2em;
+    margin: 5%;
+    font-weight: bold;
+}
+
+.celda p {
+    margin: 5%;
+}
+
+.celda button {
+    float: right;
+    margin-top: -25%;
+    margin-right: 10%;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: white;
+    color: rgb(113, 113, 239);
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(137, 247, 234);
+}
+
 /* CUARTO */
-.p .tercero .cuarto {
-    background-color: coral;
+.parte2 {
+    background-color: rgb(32, 32, 154);
+    color: white;
+    padding: 220px;
+    clip-path: ellipse(100% 80% at 50% 10%);
+}
+
+.cuarto {
+    margin: -15% 24% 0 24%;
+    height: 150px;
+    text-align: center;
+    padding: 100px;
+}
+
+.cuarto p:first-of-type {
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 25%;
+    margin-left: 40%;
+}
+
+.cuarto p:nth-of-type(2) {
+    margin-top: 5%;
+}
+
+.cuarto h1 {
+    font-weight: 100;
+}
+
+.cuarto p {
+    font-size: 0.7em;
+    margin-bottom: 5%;
+}
+
+.quinto {
+    margin: 10% 10% 0 10%;
+    border: 1px solid greenyellow;
+    border-radius: 50px;
+}
+
+.quinto .div {
+    margin: 5% 5% 5% 5%;
+}
+
+.quinto .uno {
+    background-color: #4CAF50;
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.uno h1 {
+    font-size: 1.5em;
+    margin: 0;
+    flex: 1;
+}
+
+.uno p {
+    font-size: 0.9em;
+    margin: 0;
+    flex: 2;
+    text-align: left;
+}
+
+.quinto .dos {
+    background-color: #FF9800;
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+}
+
+.dos h1 {
+    font-size: 1.5em;
+    margin: 0;
+    flex: 1;
+}
+
+.dos p {
+    font-size: 0.9em;
+    margin: 0;
+    flex: 2;
+    text-align: left;
+}
+
+.quinto .tres {
+    background-color: #9C27B0;
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+}
+
+.tres h1 {
+    font-size: 1.5em;
+    margin: 0;
+    flex: 1;
+}
+
+.tres p {
+    font-size: 0.9em;
+    margin: 0;
+    flex: 2;
+    text-align: left;
 }
