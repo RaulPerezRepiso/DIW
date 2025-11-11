@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.tabla {
+    margin: 0 auto;
+    display: table;
+    border-spacing: 20px;
+}
+
+.fila {
+    display: table-row;
+}
+
+.celda {
+    display: table-cell;
+}
+
+img {
+    width: 300px;
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-svg {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
