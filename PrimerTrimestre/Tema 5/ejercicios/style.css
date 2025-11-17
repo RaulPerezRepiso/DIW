@@ -1,0 +1,160 @@
+/*
+* EJERCICIO 1
+*/
+
+.ejer1 {
+    background-color: blue;
+}
+
+.ejer1:hover {
+    background-color: green;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+/*
+* EJERCICIO 2
+*/
+.ejer2 {
+    width: 8%;
+}
+
+.ejer2:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+    transition: all 0.5s;
+
+}
+
+/*
+* EJERCICIO 3
+*/
+.ejer3 {
+    width: 90px;
+    height: 90px;
+    background-color: beige;
+}
+
+.caja1,
+.caja2 {
+    width: 45px;
+    height: 45px;
+    background-color: red;
+    transition: background-color 0.3s ease;
+    /* transición definida aquí */
+}
+
+/* Primera caja: cambio inmediato */
+.ejer3:hover .caja1 {
+    background-color: blue;
+    transition: 0s;
+    /* sin retraso */
+}
+
+/* Segunda caja: cambio con retraso */
+.ejer3:hover .caja2 {
+    background-color: blue;
+    transition: 0.3s;
+    /* retraso de 0.3 segundos */
+}
+
+/*
+* EJERCICIO 4
+*/
+
+/*
+* EJERCICIO 5
+*/
+.ejer5 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.ejer5:hover {
+    transform: translate(50px, 50px);
+    transition: 0.3s;
+}
+
+/*
+* EJERCICIO 6
+*/
+.ejer6 {
+    width: 5%;
+    height: 5%;
+}
+
+.ejer6:hover {
+    /* animation-name: ejer6; */
+    /* animation-duration: 0.5s; */
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+/* @keyframes ejer6 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+
+} */
+
+/*
+* EJERCICIO 7
+*/
+
+.ejer7:hover{
+    color: red;
+    background-color: black;
+    width: fit-content;
+    transform: skew(15deg, -10deg);
+}
+
+/*
+* EJERCICIO 8
+*/
+.ejer8:hover{
+    color: blue;
+    background-color: beige;
+    width: 90px;
+    height: 20px;
+    transform: translate(100px, 0px) scale(1.2) rotate(45deg);
+    transition: all 1s ease-in-out;
+    
+}
+
+/*
+* EJERCICIO 9
+*/
+
+/*
+* EJERCICIO 10
+*/
+
+/*
+* EJERCICIO 11
+*/
+
+/*
+* EJERCICIO 12
+*/
+
+/*
+* EJERCICIO 13
+*/
+
+/*
+* EJERCICIO 14
+*/
+
+/*
+* EJERCICIO 15
+*/
+
+
+/*
+* EJERCICIO 16
+*/
