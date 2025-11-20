@@ -106,7 +106,7 @@
 * EJERCICIO 7
 */
 
-.ejer7:hover{
+.ejer7:hover {
     color: red;
     background-color: black;
     width: fit-content;
@@ -116,44 +116,186 @@
 /*
 * EJERCICIO 8
 */
-.ejer8:hover{
+.ejer8:hover {
     color: blue;
     background-color: beige;
     width: 90px;
     height: 20px;
     transform: translate(100px, 0px) scale(1.2) rotate(45deg);
     transition: all 1s ease-in-out;
-    
+
 }
 
 /*
 * EJERCICIO 9
 */
+.ejer9 {
+    width: 80px;
+    height: 40px;
+}
+
+.cara1 {
+    background-color: white;
+    background-color: beige;
+    backface-visibility: hidden;
+    /* oculta la cara trasera cuando no toca */
+}
+
+.cara2 {
+    background-color: beige;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    /* oculta la cara trasera cuando no toca */
+}
+
+/* Contenedor interno que se gira */
+.ejer9:hover {
+    transform: rotateY(180deg);
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+}
 
 /*
 * EJERCICIO 10
 */
+.ejer10 {
+    width: 40px;
+    height: 40px;
+}
+
+.ejer10:hover {
+    transform: rotateX(90deg);
+    transition: all 1s ease-in-out;
+}
 
 /*
 * EJERCICIO 11
 */
+.ejer11 {
+    box-shadow: 0px 0px 40px red;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.ejer11:active {
+    transform: translateZ(-20px);
+    box-shadow: 0px 0px 5px red;
+}
 
 /*
 * EJERCICIO 12
 */
+.ejer12 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* círculo perfecto */
+    background-color: blueviolet;
+    /* color de relleno */
+    animation: pulsar 2s infinite alternate;
+}
+
+/* Animación pulsar */
+@keyframes pulsar {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+}
 
 /*
 * EJERCICIO 13
 */
+header {
+    text-align: center;
+    /* centra el contenido dentro de la cabecera */
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ejer13 {
+    font-size: 3rem;
+    opacity: 0;
+    /* empieza invisible */
+    animation: slideIn 2s forwards;
+    /* dura 2s y mantiene estado final */
+}
+
+/* Animación: deslizar desde la izquierda */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 /*
 * EJERCICIO 14
 */
+.ejer14 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: aqua;
+    animation: botar 1.5s infinite;
+}
+
+
+@keyframes botar {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
 
 /*
 * EJERCICIO 15
 */
+.ejer15 {
+    width: 40px;
+    height: 40px;
+    background-color: brown;
+    animation: girar 4s infinite linear,cambiarColor 2s infinite alternate;
+}
 
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cambiarColor {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: blue;
+
+    }
+}
 
 /*
 * EJERCICIO 16
