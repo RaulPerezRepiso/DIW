@@ -1,133 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área persona | Málaga</title>
-    <link rel="shortcut icon" href="img/junta-icono.png" type="image/x-icon">
-    <!-- he usado una fuente de google fonts para tener un ejemplo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Moodle Centros</title>
 </head>
+
 <body>
+    <div class="lineaSuperior"></div>
+
     <header>
-        <div class="header-flota-izq">
-            <object class="logo-moodle" data="img/logo-moodle-centros.svg" type="image/svg+xml"></object>
-            <div class="header-flota-izq-linea">
-                <h2>CENTRO: I.E.S. Pedro Espinosa</h2>
-                <a href="index.html">Área personal</a>
-                <a href="#">Mis cursos</a>
-                <a href="#">Calendario</a>
-            </div>
+        <table class="tabla1">
+            <tr>
+                <td rowspan="3"><img src="./recursos/logo.png" alt=""></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h3>Centro: I.E.S. Pedro Espinosa</h3>
+                </td>
+            </tr>
+            <tr class="enlaces">
+                <td><a href="">Área personal</a></td>
+                <td><a href="">Mis cursos</a></td>
+                <td><a href="">Calendario</a></td>
+            </tr>
+        </table>
 
-        </div>
-        <div class="header-flota-der">
-            <object class="ico-ayuda" data="img/ayuda.svg" type="image/svg+xml"></object>
-            <object class="ico-campana" data="img/campana.svg" type="image/svg+xml"></object>
-            <div class="usuario"><span class="usu-nom">SP</span><span class="usu-flecha">&#x2335</span></div>
-            <span class="mod-edit">Modo de edición</span>
-            <svg class="btn-editar" viewBox="0 0 180 100">
-                <path class="btn-edit-fondo" d="M 60 10 A 20 20 0 0 0 60 90 L 110 90 A 20 20 0 0 0 110 10 Z" fill="none" stroke="grey" stroke-width="5"></path>
-                <circle class="btn-edit-circulo" cx="60" cy="50" r="35" fill="grey" />
-            </svg> 
-        </div>
+        <table class="tabla2">
+            <tr>
+                <td><img src="./recursos/interrogacion.png" alt=""></td>
+                <td><img src="./recursos/campana.png" alt=""></td>
+                <td><img src="./recursos/logopersonal.png" alt=""></td>
+            </tr>
+        </table>
     </header>
-    <div class="cuerpo">
-        <main>
-            <h2>Vista de cursos</h2>
-            <div class="nom-curso">
-                <span>Nombre del curso</span>
-                <span class="nom-curso-flecha">&#x2335</span>
-            </div>
-            <div class="cursos">
-                <div class="curso">
-                    <img class="curso-foto" src="img/diw.png">
-                    <object class="curso-flecha" data="img/flecha_block.svg" type="image/svg+xml"></object>
-                    <p class="curso-nom">Diseño de interfaces web</p>
-                    <div class="curso-opciones co-curso1">
-                        <object class="curso-objeto" data="img/cuestionario.svg" type="image/svg+xml"></object>
-                        <p>Cuestionario</p>
-                    </div>
-                    <div class="curso-opciones co-curso2">
-                        <object class="curso-objeto" data="img/tarea.svg" type="image/svg+xml"></object>
-                        <p>Tarea</p>
-                    </div>
-                    <div class="curso-opciones co-curso3">
-                        <object class="curso-objeto" data="img/foro.svg" type="image/svg+xml"></object>
-                        <p>Foro</p>
-                    </div>
-                    <div class="curso-opciones co-curso4">
-                        <object class="curso-objeto" data="img/calificacion.svg" type="image/svg+xml"></object>
-                        <p>Calificación</p>
-                    </div>                    
-                    <div class="curso-opciones co-curso5">
-                        <object class="curso-objeto" data="img/recursos.svg" type="image/svg+xml"></object>
-                        <p>Recursos</p>
-                    </div> 
-                </div>
 
-                <div class="curso">
-                    <img class="curso-foto" src="img/girasol.jpeg">
-                    <object class="curso-flecha" data="img/flecha_block.svg" type="image/svg+xml"></object>
-                    <p class="curso-nom">Sistemas operativos en red</p>
-                    <div class="curso-opciones co-curso1">
-                        <object class="curso-objeto" data="img/cuestionario.svg" type="image/svg+xml"></object>
-                        <p>Cuestionario</p>
-                    </div>
-                    <div class="curso-opciones co-curso2">
-                        <object class="curso-objeto" data="img/tarea.svg" type="image/svg+xml"></object>
-                        <p>Tarea</p>
-                    </div>
-                    <div class="curso-opciones co-curso3">
-                        <object class="curso-objeto" data="img/foro.svg" type="image/svg+xml"></object>
-                        <p>Foro</p>
-                    </div>
-                    <div class="curso-opciones co-curso4">
-                        <object class="curso-objeto" data="img/calificacion.svg" type="image/svg+xml"></object>
-                        <p>Calificación</p>
-                    </div>                    
-                    <div class="curso-opciones co-curso5">
-                        <object class="curso-objeto" data="img/recursos.svg" type="image/svg+xml"></object>
-                        <p>Recursos</p>
-                    </div> 
-                </div>
+    <main>
+        <h2>Área personal</h2>
 
-                <div class="curso">
-                    <img class="curso-foto" src="img/girasol.jpeg">
-                    <object class="curso-flecha" data="img/flecha_block.svg" type="image/svg+xml"></object>
-                    <p class="curso-nom">Sistemas operativos monopuesto</p>
-                    <div class="curso-opciones co-curso1">
-                        <object class="curso-objeto" data="img/cuestionario.svg" type="image/svg+xml"></object>
-                        <p>Cuestionario</p>
-                    </div>
-                    <div class="curso-opciones co-curso2">
-                        <object class="curso-objeto" data="img/tarea.svg" type="image/svg+xml"></object>
-                        <p>Tarea</p>
-                    </div>
-                    <div class="curso-opciones co-curso3">
-                        <object class="curso-objeto" data="img/foro.svg" type="image/svg+xml"></object>
-                        <p>Foro</p>
-                    </div>
-                    <div class="curso-opciones co-curso4">
-                        <object class="curso-objeto" data="img/calificacion.svg" type="image/svg+xml"></object>
-                        <p>Calificación</p>
-                    </div>                    
-                    <div class="curso-opciones co-curso5">
-                        <object class="curso-objeto" data="img/recursos.svg" type="image/svg+xml"></object>
-                        <p>Recursos</p>
-                    </div> 
-                </div>
+        <!-- primera lista desplegable -->
+        <div>
+            <h4>Vista de cursos</h4>
+            <ul id="menu">
+                <li><button>Nombre del curso ↓</button>
+                    <ul>
+                        <li><a href="">Último acceso</a></li>
+                        <li><a href="">Nombre del curso</a></li>
+                        <li><a href="">Favoritos</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <section class="section1">
+                <object data="./recursos/flecha_block.svg" type="image/svg+xml"></object>
+                <img src="./recursos/clase1.png" alt="">
+                <p>Desarrollo web entorno cliente</p>
+                <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    aria-labelledby="title" role="img">
+                    <polygon points="12,2 15,8.5 22,9.3 17,14 18.5,21 12,17.8 5.5,21 7,14 2,9.3 9,8.5"
+                    fill="rgb(36, 42, 90)" />
+                </svg>
+                <table>
+                    <tr>
+                        <td><img src="./recursos/cuestionario.png" alt=""></td>
+                        <td><img src="./recursos/tarea.png" alt=""></td>
+                        <td><img src="./recursos/foro.png" alt=""></td>
+                        <td><img src="./recursos/calificaciones.png" alt=""></td>
+                        <td><img src="./recursos/recursos.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><p>Cuestio...</p></td>
+                        <td><p>Tarea</p></td>
+                        <td><p>Foro</p></td>
+                        <td><p>Calific...</p></td>
+                        <td><p>Recursos</p></td>
+                    </tr>
+                </table>
+            </section>
 
-            <div>      
-        </main>
-    </div>
+            <section class="section2">
+                <object data="./recursos/flecha_block.svg" type="image/svg+xml"></object>
+                <img src="./recursos/bob-esponja.gif" alt="">
+                <p>Desarrollo web entorno cliente</p>
+                <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    aria-labelledby="title" role="img">
+                    <polygon points="12,2 15,8.5 22,9.3 17,14 18.5,21 12,17.8 5.5,21 7,14 2,9.3 9,8.5"
+                    fill="rgb(36, 42, 90)" />
+                </svg>
+                <table>
+                    <tr>
+                        <td><img src="./recursos/cuestionario.png" alt=""></td>
+                        <td><img src="./recursos/tarea.png" alt=""></td>
+                        <td><img src="./recursos/foro.png" alt=""></td>
+                        <td><img src="./recursos/calificaciones.png" alt=""></td>
+                        <td><img src="./recursos/recursos.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><p>Cuestio...</p></td>
+                        <td><p>Tarea</p></td>
+                        <td><p>Foro</p></td>
+                        <td><p>Calific...</p></td>
+                        <td><p>Recursos</p></td>
+                    </tr>
+                </table>
+            </section>
 
+            <section class="section3">
+                <object data="./recursos/flecha_block.svg" type="image/svg+xml"></object>
+                <img src="./recursos/messi.gif" alt="">
+                <p>Desarrollo web entorno cliente</p>
+                <svg width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    aria-labelledby="title" role="img">
+                    <polygon points="12,2 15,8.5 22,9.3 17,14 18.5,21 12,17.8 5.5,21 7,14 2,9.3 9,8.5"
+                    fill="rgb(36, 42, 90)" />
+                </svg>
+                <table>
+                    <tr>
+                        <td><img src="./recursos/cuestionario.png" alt=""></td>
+                        <td><img src="./recursos/tarea.png" alt=""></td>
+                        <td><img src="./recursos/foro.png" alt=""></td>
+                        <td><img src="./recursos/calificaciones.png" alt=""></td>
+                        <td><img src="./recursos/recursos.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><p>Cuestio...</p></td>
+                        <td><p>Tarea</p></td>
+                        <td><p>Foro</p></td>
+                        <td><p>Calific...</p></td>
+                        <td><p>Recursos</p></td>
+                    </tr>
+                </table>
+            </section>
+            <div>
+                <object data="./recursos/flecha_block.svg" type="image/svg+xml"></object>
+                <object data="./recursos/flecha_block.svg" type="image/svg+xml"></object>
+            </div>    
+        </div>
+
+    </main>
+    <br><br>
     <footer>
-        <img class="logo-eu" src="img/footer-eu.png">
-        <img class="logo-esp" src="img/footer-gob-esp.png">"
-    </footer>
+        <table>
+            <tr>
+                <td><img src="./recursos/footer-eu.png" alt=""></td>
+                <td><img src="./recursos/footer-gob-esp.png" alt=""></td>
+                <td><img src="./recursos/footer-fondos.png" alt=""></td>
+                <td><img src="./recursos/logo_junta_blanco.png" alt=""></td>
+            </tr>
+        </table>
 
+    </footer>
 </body>
+
 </html>

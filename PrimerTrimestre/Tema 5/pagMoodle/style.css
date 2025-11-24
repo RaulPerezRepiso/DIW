@@ -1,110 +1,106 @@
 /*REINICIO DE PROPIDADES*/
-body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-
-    /*COLORES POR DEFECTO*/
-    --color-primario: #23407b;
-    --color-secundario: #88b1cd;
-    --color-gris-claro: #f7f7f7;
-    --color-fondo: #eef2f5;
-    --color-rgba: rgba(0, 0, 0, 0.1);
-    --color-rgba2: rgba(0, 0, 0);
-
-    --color-blanco: white;
-
-    background-color: var(--color-fondo);
+:root {
+  --color-primario: #23407b;
+  --color-secundario: #88b1cd;
+  --color-gris-claro: #f7f7f7;
+  --color-fondo: #eef2f5;
+  --color-rgba: rgba(0, 0, 0, 0.1);
+  --color-rgba2: rgba(0, 0, 0);
+  --color-blanco: white;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-fondo);
+}
 
 /* CABECERA */
 .cabecera {
-    background-color: var(--color-blanco);
-    height: 100px;
-    position: relative;
+  background-color: var(--color-blanco);
+  height: 100px;
+  position: relative;
 }
 
 .cabIz,
 .cabMe,
 .cabDe {
-    /* Se alinean en línea */
-    display: inline-block;
-    /* Alineación vertical */
-    vertical-align: middle;
+  /* Se alinean en línea */
+  display: inline-block;
+  /* Alineación vertical */
+  vertical-align: middle;
 }
 
 /* Izquierda */
 .cabIz {
-    margin: 20px 10px;
+  margin: 20px 10px;
 }
 
 /* Medio */
 .cabMe h2 {
-    margin: 0px 15px;
+  margin: 0px 15px;
 }
 
 .cabMe .enlaces {
-    margin: 9% 0;
+  margin: 9% 0;
 }
 
 .cabMe .enlaces a {
-    /* Eliminar formato de enlace */
-    text-decoration: none;
-    margin: 0 15px;
-    color: var(--color-rgba2);
-    padding-bottom: 4px;
+  /* Eliminar formato de enlace */
+  text-decoration: none;
+  margin: 0 15px;
+  color: var(--color-rgba2);
+  padding-bottom: 4px;
 }
 
 .cabMe .enlaces a:hover {
-    border-bottom: 3px solid var(--color-primario);
+  border-bottom: 3px solid var(--color-primario);
 }
 
 .cabMe .enlaces a:active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .cabMe {
-    display: inline-block;
-    border-left: 2px solid var(--color-primario);
-    height: 80px;
-    margin: 5px 20px;
+  display: inline-block;
+  border-left: 2px solid var(--color-primario);
+  height: 80px;
+  margin: 5px 20px;
 }
 
 /* Derecha */
 .cabDe {
-    position: absolute;
-    right: 20px;
-    /* separación del borde derecho */
-    top: 50%;
-
+  position: absolute;
+  right: 20px;
+  /* separación del borde derecho */
+  top: 50%;
 }
 
 .cabDe .enlacesDe {
-
-    /* elimina márgenes que empujan */
-    display: inline-block;
-    /* mantiene el bloque en línea */
-    text-align: right;
+  /* elimina márgenes que empujan */
+  display: inline-block;
+  /* mantiene el bloque en línea */
+  text-align: right;
 }
 
 .cabDe .enlacesDe object {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .cabDe .enlacesDe a {
-    margin: 0 20px;
-    background-color: var(--color-primario);
-    padding: 8px 7px;
-    border-radius: 50%;
-    color: var(--color-blanco);
-    font-weight: bold;
+  margin: 0 20px;
+  background-color: var(--color-primario);
+  padding: 8px 7px;
+  border-radius: 50%;
+  color: var(--color-blanco);
+  font-weight: bold;
 }
 
 .cabDe .enlacesDe .mod-edit {
-    margin-top: -50px;
+  margin-top: -50px;
 }
 
 /* Editar para que aparezca la flecha */
@@ -121,54 +117,163 @@ body {
 
 } */
 
-
 .cabDe .enlacesDe svg {
-    width: 7%;
-    height: 7%;
+  width: 7%;
+  height: 7%;
 }
 
 .img1,
 .img2 {
-    height: 3%;
-    width: 3%;
+  height: 3%;
+  width: 3%;
 }
 
 /* VISTA */
 .divVista {
-    width: 90%;
-    text-align: center;
-    background-color: var(--color-blanco);
-    margin: 0 auto;
-    border-radius: 8px;
-
+  width: 90%;
+  text-align: center;
+  background-color: var(--color-blanco);
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 25px;
+  padding-bottom: 15px;
+  padding-top: 25px; /* Empuja el contenido hacia abajo */
 }
 
 .divVista h3 {
-    font-weight: normal;
-    opacity: 0.5;
-    text-align: left;
-    margin-left: 5px;
-    margin-bottom: 25px;
+  font-weight: normal;
+  opacity: 0.5;
+  text-align: left;
+  margin-left: 25px;
 }
 
 .divVista button {
-    display: block;
-    background-color: var(--color-primario);
-    border-radius: 5px;
-    margin-left: 5px;
-    padding: 8px;
-    margin-bottom: 15px;
-    color: var(--color-blanco);
+  display: block;
+  background-color: var(--color-primario);
+  border-radius: 5px;
+  margin-left: 25px;
+  padding: 8px;
+  margin-bottom: 15px;
+  color: var(--color-blanco);
 }
 
-.divVista div {
-    display: inline-block;
-    text-align: center;
-    color: var(--color-primario);
+.divVista main > div {
+  display: inline-block;
+  text-align: center;
+  color: var(--color-primario);
+  border: 1px solid var(--color-rgba);
+  border-radius: 0 0 8px 8px;
 }
 
 .divVista div img {
-    width: 300px;
-    height: 150px;
+  width: 410px;
+  height: 205px;
+  border-radius: 5px;
+}
 
+/* Cursos */
+.curso {
+  text-align: center; /* Centra todo el bloque */
+  background-color: var(--color-gris-claro);
+  padding: 15px;
+}
+
+/* Cada item como tarjeta */
+.curso .item {
+  display: inline-block; /* Coloca los bloques en línea */
+  width: 40px; /* Mismo ancho para todos */
+  height: 40px; /* Misma altura para todos */
+  margin: 5px; /* Espacio entre tarjetas */
+  text-align: center; /* Centra icono y texto dentro */
+  padding: 10px;
+  transition: all 0.5s ease; /* Suaviza el efecto */
+  vertical-align: top; /* Evita que se desplacen por el texto */
+  background-color: var(--color-gris-claro);
+}
+
+/* Icono */
+.curso object {
+  display: block; /* icono arriba */
+  margin: 0 auto; /* centrado horizontal */
+  width: 15px;
+  height: 15px;
+}
+
+/* Texto */
+.curso p {
+  font-size: x-small;
+  margin: 8px 0 0 0; /* margen respecto al icono */
+  color: var(--color-texto); /* color base del texto */
+}
+
+/* Hover: fondo */
+.curso .item:hover {
+  background-color: var(--color-primario);
+  cursor: pointer;
+}
+
+/* Hover: texto */
+.curso .item:hover p {
+  color: var(--color-fondo);
+}
+
+/* Hover: icono recoloreado con filtro */
+.curso .item:hover object {
+  filter: invert(100%) hue-rotate(185deg) brightness(131%) contrast(94%);
+}
+
+/*CURSO*/
+.imgCurso {
+  position: relative;
+  display: inline-block;
+}
+
+.imgCurso img {
+  width: 410px;
+  height: 205px;
+  border-radius: 5px;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Overlay oculto por defecto */
+.imgCurso .overlay {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  opacity: 0; /* invisible */
+  transition: opacity 0.3s ease;
+}
+
+/* Hover: baja opacidad de la imagen principal */
+.imgCurso:hover img {
+  opacity: 0.5;
+}
+
+/* Hover: muestra el overlay */
+.imgCurso:hover .overlay {
+  opacity: 1;
+}
+
+/* FOOTER */
+.pie {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px; /* Altura fija */
+  background-color: var(--color-primario);
+  text-align: center; /* Centra horizontalmente */
+}
+
+.pie img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px; /* Tamaño uniforme */
+  margin: 15px 15px;
 }

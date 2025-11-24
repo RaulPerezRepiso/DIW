@@ -1,60 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Área Personal | Málaga</title>
     <!-- Asiganar un Icono a la página -->
-    <link rel="shortcut icon" href="img/junta-icono.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="shortcut icon" href="img/junta-icono.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="cabecera">
-        <div class="cabIz">
-            <img src="img/logo-moodle-centros.svg" alt="">
+      <div class="cabIz">
+        <img src="img/logo-moodle-centros.svg" alt="" />
+      </div>
+      <div class="cabMe">
+        <h2>Centro: I.E.S Pedro Espinosa</h2>
+        <div class="enlaces">
+          <a href="">Área personal</a>
+          <a href="">Mis cursos</a>
+          <a href="">Calendario</a>
         </div>
-        <div class="cabMe">
-            <h2>Centro: I.E.S Pedro Espinosa</h2>
-            <div class="enlaces">
-                <a href="">Área personal</a>
-                <a href="">Mis cursos</a>
-                <a href="">Calendario</a>
-            </div>
+      </div>
+      <div class="cabDe">
+        <div class="enlacesDe">
+          <object class="img1" data="img/ayuda.svg"></object>
+          <object class="img2" data="img/campana.svg"></object>
+          <a class="pr">PR</a>
+          <span class="mod-edit">Modo de edición</span>
+          <svg class="btn-editar" viewBox="0 0 180 100">
+            <path
+              class="btn-edit-fondo"
+              d="M 60 10 A 20 20 0 0 0 60 90 L 110 90 A 20 20 0 0 0 110 10 Z"
+              fill="none"
+              stroke="grey"
+              stroke-width="5"
+            ></path>
+            <circle
+              class="btn-edit-circulo"
+              cx="60"
+              cy="50"
+              r="35"
+              fill="grey"
+            />
+          </svg>
         </div>
-        <div class="cabDe">
-            <div class="enlacesDe">
-                <object class="img1" data="img/ayuda.svg"></object>
-                <object class="img2" data="img/campana.svg"></object>
-                <a class="pr">PR</a>
-                <span class="mod-edit">Modo de edición</span>
-                <svg class="btn-editar" viewBox="0 0 180 100">
-                    <path class="btn-edit-fondo" d="M 60 10 A 20 20 0 0 0 60 90 L 110 90 A 20 20 0 0 0 110 10 Z"
-                        fill="none" stroke="grey" stroke-width="5"></path>
-                    <circle class="btn-edit-circulo" cx="60" cy="50" r="35" fill="grey" />
-                </svg>
-            </div>
-        </div>
-        <div class="divVista">
-            <h3>Vista de cursos</h3>
-            <button>Nombre del curso</button>
-            <div>
-                <img src="img/javascript.gif" alt="">
-                <p>Desarrollo web entorno cliente</p>
-            </div>
-            <div>
-                <img src="img/php.gif" alt="">
-                <p>Desarrollo web en entorno servidor (CFGD)</p>
-            </div>
-            <div>
-                <img src="img/diw.gif" alt="">
-                <p>Diseño de Interfaces web</p>
-            </div>
-        </div>
+      </div>
     </header>
+    <div class="divVista">
+      <main>
+        <h3>Vista de cursos</h3>
+        <button>Nombre del curso</button>
+        <div>
+          <div class="imgCurso">
+            <img src="img/javascript.gif" alt="" />
+            <img src="img/flecha_block.svg" alt="Overlay" class="overlay" />
+          </div>
+          <p>Desarrollo web entorno cliente</p>
 
-    <footer class="pie"></footer>
-</body>
-
+          <div class="curso">
+            <div class="item">
+              <object data="img/cuestionario.svg" type="image/svg+xml"></object>
+              <p>Cuestionario</p>
+            </div>
+            <div class="item">
+              <object data="img/tarea.svg" type="image/svg+xml"></object>
+              <p>Tarea</p>
+            </div>
+            <div class="item">
+              <object data="img/foro.svg" type="image/svg+xml"></object>
+              <p>Foro</p>
+            </div>
+            <div class="item">
+              <object data="img/calificacion.svg" type="image/svg+xml"></object>
+              <p>Calificación</p>
+            </div>
+            <div class="item">
+              <object data="img/recursos.svg" type="image/svg+xml"></object>
+              <p>Recursos</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="imgCurso">
+            <img src="img/php.gif" alt="" />
+            <img src="img/flecha_block.svg" alt="Overlay" class="overlay" />
+          </div>
+          <p>Desarrollo web en entorno servidor (CFGD)</p>
+          <div class="curso">
+            <div class="item">
+              <object data="img/cuestionario.svg" type="image/svg+xml"></object>
+              <p>Cuestionario</p>
+            </div>
+            <div class="item">
+              <object data="img/tarea.svg" type="image/svg+xml"></object>
+              <p>Tarea</p>
+            </div>
+            <div class="item">
+              <object data="img/foro.svg" type="image/svg+xml"></object>
+              <p>Foro</p>
+            </div>
+            <div class="item">
+              <object data="img/calificacion.svg" type="image/svg+xml"></object>
+              <p>Calificación</p>
+            </div>
+            <div class="item">
+              <object data="img/recursos.svg" type="image/svg+xml"></object>
+              <p>Recursos</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="imgCurso">
+            <img src="img/diw.gif" alt="" />
+            <img src="img/flecha_block.svg" alt="Overlay" class="overlay" />
+          </div>
+          <p>Diseño de Interfaces web</p>
+          <div class="curso">
+            <div class="item">
+              <object data="img/cuestionario.svg" type="image/svg+xml"></object>
+              <p>Cuestionario</p>
+            </div>
+            <div class="item">
+              <object data="img/tarea.svg" type="image/svg+xml"></object>
+              <p>Tarea</p>
+            </div>
+            <div class="item">
+              <object data="img/foro.svg" type="image/svg+xml"></object>
+              <p>Foro</p>
+            </div>
+            <div class="item">
+              <object data="img/calificacion.svg" type="image/svg+xml"></object>
+              <p>Calificación</p>
+            </div>
+            <div class="item">
+              <object data="img/recursos.svg" type="image/svg+xml"></object>
+              <p>Recursos</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="pie">
+      <img src="img/footer-eu.png" alt="Unión Europea" />
+      <img src="img/footer-gob-esp.png" alt="Gobierno de España" />
+      <img src="img/footer-fondos.png" alt="Fondos Europeos" />
+      <img src="img/logo_junta_blanco.png" alt="Fondos Europeos" />
+    </footer>
+  </body>
 </html>
