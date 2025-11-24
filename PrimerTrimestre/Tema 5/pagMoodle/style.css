@@ -79,31 +79,36 @@ body {
     right: 20px;
     /* separación del borde derecho */
     top: 50%;
+
 }
 
 .cabDe .enlacesDe {
-    margin: 0;
+
     /* elimina márgenes que empujan */
     display: inline-block;
     /* mantiene el bloque en línea */
-    vertical-align: middle;
+    text-align: right;
 }
 
 .cabDe .enlacesDe object {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .cabDe .enlacesDe a {
-    margin-left: 50px;
+    margin: 0 20px;
     background-color: var(--color-primario);
-    padding: 8px;
-    height: auto;
+    padding: 8px 7px;
     border-radius: 50%;
     color: var(--color-blanco);
     font-weight: bold;
 }
 
-.cabDe .enlacesDe .pr::after {
+.cabDe .enlacesDe .mod-edit {
+    margin-top: -50px;
+}
+
+/* Editar para que aparezca la flecha */
+/* .cabDe .enlacesDe .pr::after {
     content: "";
     display: inline-block;
     width: 16px;
@@ -114,15 +119,56 @@ body {
     margin-left: 5px;
     vertical-align: middle;
 
-}
+} */
 
 
-.cabDe .enlacesDe button {
-    margin-left: 15%;
+.cabDe .enlacesDe svg {
+    width: 7%;
+    height: 7%;
 }
 
 .img1,
 .img2 {
-    height: 5%;
-    width: 5%;
+    height: 3%;
+    width: 3%;
+}
+
+/* VISTA */
+.divVista {
+    width: 90%;
+    text-align: center;
+    background-color: var(--color-blanco);
+    margin: 0 auto;
+    border-radius: 8px;
+
+}
+
+.divVista h3 {
+    font-weight: normal;
+    opacity: 0.5;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 25px;
+}
+
+.divVista button {
+    display: block;
+    background-color: var(--color-primario);
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 8px;
+    margin-bottom: 15px;
+    color: var(--color-blanco);
+}
+
+.divVista div {
+    display: inline-block;
+    text-align: center;
+    color: var(--color-primario);
+}
+
+.divVista div img {
+    width: 300px;
+    height: 150px;
+
 }
