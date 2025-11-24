@@ -1,0 +1,18 @@
+.escena-btn-ej11 {
+  perspective: 300px;
+}
+.boton-3d-ej11 {
+  padding: 15px 30px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 #c0392b; /* Sombra que da profundidad */
+  transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+  transform-style: preserve-3d;
+}
+
+.boton-3d-ej11:active {
+  box-shadow: 0 2px 0 #c0392b;
+  transform: translateZ(-5px); /* Lo trasladamos 5px hacia adentro, para que haga el efecto de aplanar */
+}

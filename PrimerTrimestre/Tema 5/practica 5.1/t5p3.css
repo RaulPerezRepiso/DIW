@@ -1,0 +1,19 @@
+.contenedor-ej3 {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: #e74c3c; /* Rojo */
+  margin: 10px;
+  transition: background-color 0.5s ease;
+}
+
+#caja2 {
+  transition-delay: 0.3s; /* retardo para que la animación de caja2 comience después de caja */
+}
+
+.contenedor-ej3:hover .caja {
+  background-color: #3498db; /* Azul */
+}

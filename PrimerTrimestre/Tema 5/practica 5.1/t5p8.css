@@ -1,0 +1,10 @@
+.caja-ej8 {
+  width: 100px;
+  height: 100px;
+  background-color: #9b59b6; /* Morado */
+  transition: transform 0.5s ease;
+}
+
+.caja-ej8:hover {
+  transform: translateX(100px) scale(1.2) rotate(45deg);
+}

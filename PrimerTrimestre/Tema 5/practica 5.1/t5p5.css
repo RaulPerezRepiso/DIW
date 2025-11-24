@@ -1,0 +1,13 @@
+.caja-ej5 {
+  width: 100px;
+  height: 100px;
+  background-color: #f1c40f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.caja-ej5:hover {
+  transform: translate(50px, 20px);
+}

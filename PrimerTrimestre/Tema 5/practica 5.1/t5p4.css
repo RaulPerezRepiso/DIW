@@ -1,0 +1,27 @@
+.menu-link-ej4 {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  position: relative; /* Necesario para posicionar ::after */
+  padding-bottom: 5px;
+}
+
+/*Se crea una caja vacía a continuación del <a> que se posiciona al principio con position*/
+/*Se le da una achura del 0% en un principio y una altura de 4px para simular el efecto de grosor de línea*/
+/*Al pasar el ratón sobre el enlace, mediante una transición, hacemos que la achura sea del 100% en 0.4.s*/
+
+.menu-link-ej4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background-color: #3498db;
+  transition: width 0.4s ease-out;
+}
+
+/*El contenedor sin contenido agreado con after, modifica su tamaño hasta el 100% del padre*/
+.menu-link-ej4:hover::after {
+  width: 100%;
+}

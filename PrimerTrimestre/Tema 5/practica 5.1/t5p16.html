@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t5p16</title>
+    <style>
+        .body {
+            position: relative;
+        }
+
+        .menu-icono {
+            position: absolute;
+            width: 10%;
+            height: 10%;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            background-color: aliceblue;
+        }
+
+        .linea, .rectangulo {
+            fill: none;
+            stroke: black;
+            stroke-width: 4px;
+            transform-origin: center;
+            transform-box: fill-box;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .menu-icono:hover .linea1 {
+            transform: translateY(20px) rotate(45deg);
+            stroke: red;
+        }
+
+        .menu-icono:hover .linea2 {
+            opacity: 0;
+        }
+
+        .menu-icono:hover .linea3 {
+            transform: translateY(-20px) rotate(-45deg);
+            stroke: red;
+        }
+
+        .menu-icono:hover .rectangulo {
+            stroke: red;
+        }
+
+    </style>
+</head>
+<body>
+    <svg class="menu-icono" viewBox="0 0 100 100">
+        <path class="linea linea1" d="M 20,30 L 80,30" />
+        <path class="linea linea2" d="M 20,50 L 80,50" />
+        <path class="linea linea3" d="M 20,70 L 80,70" />
+        <rect class="rectangulo" x="10" y="10" width="80" height="80" rx="5" ry="5"></rect>
+    </svg>
+</body>
+</html>

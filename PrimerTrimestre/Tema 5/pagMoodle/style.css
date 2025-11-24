@@ -1,0 +1,128 @@
+/*REINICIO DE PROPIDADES*/
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*COLORES POR DEFECTO*/
+    --color-primario: #23407b;
+    --color-secundario: #88b1cd;
+    --color-gris-claro: #f7f7f7;
+    --color-fondo: #eef2f5;
+    --color-rgba: rgba(0, 0, 0, 0.1);
+    --color-rgba2: rgba(0, 0, 0);
+
+    --color-blanco: white;
+
+    background-color: var(--color-fondo);
+}
+
+
+/* CABECERA */
+.cabecera {
+    background-color: var(--color-blanco);
+    height: 100px;
+    position: relative;
+}
+
+.cabIz,
+.cabMe,
+.cabDe {
+    /* Se alinean en línea */
+    display: inline-block;
+    /* Alineación vertical */
+    vertical-align: middle;
+}
+
+/* Izquierda */
+.cabIz {
+    margin: 20px 10px;
+}
+
+/* Medio */
+.cabMe h2 {
+    margin: 0px 15px;
+}
+
+.cabMe .enlaces {
+    margin: 9% 0;
+}
+
+.cabMe .enlaces a {
+    /* Eliminar formato de enlace */
+    text-decoration: none;
+    margin: 0 15px;
+    color: var(--color-rgba2);
+    padding-bottom: 4px;
+}
+
+.cabMe .enlaces a:hover {
+    border-bottom: 3px solid var(--color-primario);
+}
+
+.cabMe .enlaces a:active {
+    font-weight: bold;
+}
+
+.cabMe {
+    display: inline-block;
+    border-left: 2px solid var(--color-primario);
+    height: 80px;
+    margin: 5px 20px;
+}
+
+/* Derecha */
+.cabDe {
+    position: absolute;
+    right: 20px;
+    /* separación del borde derecho */
+    top: 50%;
+}
+
+.cabDe .enlacesDe {
+    margin: 0;
+    /* elimina márgenes que empujan */
+    display: inline-block;
+    /* mantiene el bloque en línea */
+    vertical-align: middle;
+}
+
+.cabDe .enlacesDe object {
+    margin-left: 50px;
+}
+
+.cabDe .enlacesDe a {
+    margin-left: 50px;
+    background-color: var(--color-primario);
+    padding: 8px;
+    height: auto;
+    border-radius: 50%;
+    color: var(--color-blanco);
+    font-weight: bold;
+}
+
+.cabDe .enlacesDe .pr::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("img/image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    vertical-align: middle;
+
+}
+
+
+.cabDe .enlacesDe button {
+    margin-left: 15%;
+}
+
+.img1,
+.img2 {
+    height: 5%;
+    width: 5%;
+}

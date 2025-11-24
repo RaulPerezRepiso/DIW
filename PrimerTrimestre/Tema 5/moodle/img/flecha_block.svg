@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 753.03721 753.80153"
+   width="753.03723"
+   height="753.80151"
+   version="1.1"
+   id="svg850"
+   sodipodi:docname="flecha_block.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview852"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.0814955"
+     inkscape:rotation="-1"
+     inkscape:cx="376.97641"
+     inkscape:cy="413.28148"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g848" />
+  <desc
+     id="desc824">flecha_block.dxf - scale = 1.0, origin = (0.0, 0.0), method = manual</desc>
+  <defs
+     id="defs840">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0"
+       refY="0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 -3,3 M 0,-5 V 5"
+         style="stroke:#000000;stroke-width:0.5"
+         id="path826" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path829" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path831" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path833" />
+    </pattern>
+    <symbol
+       id="*Model_Space" />
+    <symbol
+       id="*Paper_Space" />
+    <symbol
+       id="*Paper_Space0" />
+    <symbol
+       id="A$C43F50084" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="0"
+     id="g848"
+     transform="translate(376.66047,-745.85414)">
+    <use
+       xlink:href="#A$C43F50084"
+       id="use846"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%" />
+    <path
+       style="fill:#23407b;stroke-width:1.30765"
+       d="M 371.26689,755.03028 C 236.00906,752.1594 113.2466,677.80727 48.308927,559.42804 -5.3236845,461.65757 -12.93514,346.4844 27.328888,241.96739 52.606422,176.35218 99.713111,115.40976 157.48548,73.582427 276.18398,-12.355567 433.6507,-21.91943 560.91629,49.079744 642.47091,94.57759 704.7366,168.85468 734.91151,256.6396 c 12.2575,35.65957 18.05212,67.70043 19.56134,108.16263 1.44694,38.79275 -1.40708,67.3185 -10.42452,104.19308 -34.81988,142.38712 -152.13431,252.78299 -297.606,280.05483 -11.05925,2.0733 -55.1131,7.05062 -57.49131,6.49552 -0.36296,-0.0848 -8.32082,-0.31663 -17.68413,-0.51538 z M 397.1008,601.58572 c 2.67573,-1.39246 8.3171,-5.96342 12.5364,-10.15769 43.38091,-43.1236 185.14299,-185.29597 187.74743,-188.29083 9.57772,-11.01353 11.47101,-29.47166 4.37028,-42.60708 -2.87174,-5.31233 -27.01917,-30.21345 -101.00171,-104.15422 -53.47522,-53.44502 -99.64837,-98.67242 -102.607,-100.50532 -2.95863,-1.8329 -8.71154,-3.89741 -12.78424,-4.58778 -18.123,-3.07213 -34.92779,5.7961 -42.30294,22.32409 -2.78939,6.25111 -3.30988,9.27 -3.00887,17.45175 0.31219,8.48583 0.96014,10.9194 4.55499,17.10791 2.96164,5.09845 22.29167,25.27944 65.89704,68.79807 l 61.70601,61.58326 -5.11643,0.54103 c -2.81404,0.29759 -67.24004,0.51099 -143.16889,0.47426 -75.92886,-0.0368 -140.38864,0.45456 -143.24397,1.09179 -21.48434,4.79469 -34.64796,27.21955 -28.39281,48.36855 4.53191,15.32263 16.27182,25.65004 31.39025,27.6135 4.22722,0.54899 58.02877,0.92212 119.55902,0.82918 136.72453,-0.20654 167.52115,-0.10201 168.24558,0.57099 0.30851,0.28663 -27.55691,28.60079 -61.92317,62.92038 -71.29797,71.20113 -70.04556,69.6102 -69.31378,88.04872 0.45978,11.58342 3.10024,17.87498 10.84348,25.83672 6.09996,6.27211 13.51202,9.97547 21.77931,10.88182 7.72061,0.84644 18.04112,-0.91628 24.23402,-4.1391 z"
+       id="path1640"
+       transform="translate(-378.45276,744.06709)" />
+  </g>
+</svg>

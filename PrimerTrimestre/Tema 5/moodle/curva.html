@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg</title>
+    <style>
+        path {
+            fill: none;
+            stroke: black;
+            stroke-width: 4;
+        }
+
+        circle {
+            fill: black;
+            transition: all 1s ease;
+        }
+        svg:hover .btn-edit-circulo {
+            transform: translateX(50px);
+            stroke: black;
+            fill: yellow;
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 180 100">
+        <path d="M 60 10 A 20 20 0 0 0 60 90 L 110 90 A 20 20 0 0 0 110 10 Z"></path>
+        <circle class="btn-edit-circulo" cx="60" cy="50" r="35" fill="grey" />
+    </svg>    
+</body>
+</html>

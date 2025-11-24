@@ -1,0 +1,19 @@
+.escena-ej10 {
+  padding: 50px;
+  perspective: 500px;
+}
+
+.panel-ej10 {
+  width: 200px;
+  height: 100px;
+  background-color: #1abc9c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
+}
+
+.escena-ej10:hover .panel-ej10 {
+  transform: rotateX(90deg);
+}

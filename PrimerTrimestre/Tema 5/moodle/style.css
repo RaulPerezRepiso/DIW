@@ -1,0 +1,430 @@
+
+/*reinicio de propiedades*/
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*variables para los colores*/
+    --color-primario: #23407b;
+    --color-secundario: #88b1cd;
+    --color-gris-claro: #f7f7f7;
+    --color-fondo: #eef2f5;
+    --color-rgba: rgba(0,0,0,0.1);
+    --color-blanco: white;
+
+    background-color: var(--color-fondo);
+}
+
+/*Estilos cabecera principal*/
+header {
+    height: 10.5vh;
+    overflow-y: auto;
+    background-color: var(--color-blanco);
+    box-shadow: 0 0 15px 5px var(--color-rgba);
+    border-top: 3px solid var(--color-primario);
+    margin-top: 2px;
+}
+
+/*Estilos parte izquierda cabecera*/
+header .header-flota-izq {
+    float: left;
+}
+
+/*estilos para el div que contiene el nombre del instituto y los enlaces*/
+header .header-flota-izq-linea {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/*estilos de los enlaces*/
+header .header-flota-izq-linea a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    margin-right: 30px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+/*estilo del nombre del instituto*/
+h2 {
+    /*fuente de google fonts*/
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;  
+}
+
+/*para la línea que hay bajo los enlaces, igual que el ejercicio de la línea horizontal que aparece, pero en vertical, con height a 0 en un principio*/
+header .header-flota-izq-linea a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    opacity: 0;
+    background-color: var(--color-primario);
+    transition: all 0.4s ease-out;
+}
+
+/*aparece la línea hacía arriba a posicionarnos sobre los enlaces*/
+/*no se puede dejar remarcada la sección seleccionada, ya qu deberías hacerlo en javascript*/
+header .header-flota-izq-linea a:hover::after {
+    height: 4px;
+    opacity: 1;
+    transition: height 0.4s ease-out;
+}
+
+/*logo svg de la moodle*/
+header .header-flota-izq .logo-moodle {
+    padding: 0 20px 0 10px;
+    border-right: 2px solid var(--color-primario);
+}
+
+/*Estilos parte derecha cabecera*/
+header .header-flota-der {
+    float: right;
+    width: 40%;
+    margin-top: 30px;
+    text-align: right;
+}
+
+/*icono de ayuda svg*/
+header .header-flota-der .ico-ayuda {
+    display: inline;
+    width: 5%;
+    margin: 0 25px;
+}
+
+/*icono de la campana svg*/
+header .header-flota-der .ico-campana {
+    display: inline;
+    width: 4%;
+}
+
+/*div donde se ubica el circulo del usuario y el icono de la flecha hacia abajo*/
+header .header-flota-der .usuario {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    background-color: var(--color-primario);
+    color: white;
+    margin: 0 50px 0 25px;
+    font-weight: bold;
+}
+
+/*posicionamos el span con el nombre del usuario en el centro del div padre*/
+header .header-flota-der .usuario .usu-nom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.5em;
+}
+/*posicionamos la flecha hacía abajo a la derecha del circulo con el nombre de usuario*/
+header .header-flota-der .usuario .usu-flecha {
+    position: absolute;
+    top: 50%;
+    right: -65%;
+    transform: translate(-50%,-50%);
+    color: var(--color-primario);
+}
+
+/*estilos texto Modo edición*/
+header .header-flota-der .mod-edit{
+    font-size: 1.2em;
+    padding-right: 10px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+/*estilos del svg que simula un botón de editar*/
+header .header-flota-der .btn-editar {
+    padding: 0;
+    margin-bottom: -8px;
+    margin-right: 40px;
+    width: 7.5%;
+    height: 7.5%;
+}
+
+/*dentro del svg con el botón de editar se pueden seleccionar los elementos independientemente*/
+/*he seleccionado el <circle> que tiene la clase .btn-edit-circulo para modificar si origen */
+/*de coordenadas y hacer que pase de la esquina superior izquierda al centro del propio objeto*/
+header .header-flota-der .btn-editar .btn-edit-circulo {
+    transform-origin: center; /*centra en el lienzo svg*/
+    transform-box: fill-box; /*indica que el centro no sea el del lienzo si no la caja del propio objeto svg, en este caso el <circle>*/
+    transition: all 0.25s ease;
+}
+
+/*creamos una transición independiente para el color de fondo del svg*/
+header .header-flota-der .btn-editar .btn-edit-fondo {
+    transition: all 0.25s ease;
+}
+
+/*al hacer :hover sobre el botón, cambiamos el color del círculo a blanco y lo desplazamos a la derecha*/
+header .header-flota-der .btn-editar:hover .btn-edit-circulo {
+    fill: var(--color-blanco);
+    transform: translateX(50px);
+}
+
+/*cambiamos el color del fondo del svg al hacer :hover*/
+header .header-flota-der .btn-editar:hover .btn-edit-fondo {
+    stroke: var(--color-primario);
+    fill: var(--color-primario);
+}
+
+
+/*ESTILOS PARA EL CUERPO DE LA PÁGINA*/
+.cuerpo {
+    height: 75vh;
+    position: relative;
+}
+
+
+.cuerpo main {
+    width: auto;
+    height: 95%;
+    margin: 0 30px;
+    background-color: var(--color-blanco);
+    border-radius: 15px;
+}
+
+/*El aside no me ha dado tiempo, pero iba a posicionar a la derecha y sacarlo de pantalla*/
+/* con un transform: traslateX(-100%);*/ 
+.cuerpo aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    background-color: var(--color-primario);
+}
+
+/*Título de main*/
+.cuerpo main h2 {
+    color: var(--color-primario);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 15px;
+    padding-top: 25px;
+}
+
+/*Botón nombre del curso*/
+/*no tiene lista desplegable, la podéis añadir vosotros y practicar eso*/
+.cuerpo main .nom-curso {
+    position: relative;
+    width: fit-content;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 12.5px 15px;
+    padding-right: 35px;
+    border-radius: 10px;
+    margin-left: 15px;
+    transition: background-color 0.5s ease;
+}
+
+/*cambia el color del botón nombre del curso al hacer :hover*/
+.cuerpo main .nom-curso:hover {
+    background-color: var(--color-secundario);
+    cursor: pointer;
+}
+
+/*reposiciono la flecha que hay a la derecha de nombre del curso para que se parezca más a la página de moodle*/
+.cuerpo main .nom-curso .nom-curso-flecha {
+    position: absolute;
+    top: 7px;
+    right: 13px;
+}
+
+/*Un <div> con las tres tarjetas de los cursos*/
+.cuerpo main .cursos {
+    margin: 12.5px 15px;
+    text-align: center;
+}
+
+/*estilos para cada tarjeta de curso*/
+.cuerpo main .cursos .curso {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 30%;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid var(--color-rgba)
+}
+
+/*la foto del curso, ocupando un 50% del contenedor*/
+.cuerpo main .cursos .curso .curso-foto {
+    border-radius: 10px;
+    border: 0.5px solid var(--color-rgba);
+    height: 50%;
+    width: 100%;
+    object-fit: cover; /*hace que la imagen se recorte al tamaño del contenedor y no se deforme*/
+}
+
+/*al hacer :hover cambia la opacidad de la foto del curso*/
+.cuerpo main .cursos .curso:hover .curso-foto{
+    opacity: 0.7;
+}
+
+/*flecha azul que no está visible, posicionada en el centro de la imagen del curso*/
+.cuerpo main .cursos .curso .curso-flecha {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*translada el gizmo de transformación al centro del propio objeto*/
+    cursor: pointer;
+}
+
+/* al hacer :hover sobre la imagen del curso, cambia el icono del ratón*/
+.cuerpo main .cursos .curso .curso-foto:hover {
+    cursor: pointer;
+}
+
+/* al hacer :hover sobre la tarjeta del curso, se muestra la flecha que, en un principio, estaba oculta*/
+.cuerpo main .cursos .curso:hover .curso-flecha{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*nombre del curso*/
+.cuerpo main .cursos .curso .curso-nom {
+    font-size: 1.2em;
+    color: var(--color-primario);
+}
+
+/*cada una de las 5 opciones que aparece abajo de cada tarjeta de curso*/
+.cuerpo main .cursos .curso .curso-opciones {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 20%;
+    height: 25%;
+    border: 1px solid var(--color-rgba);
+    background-color: var(--color-gris-claro);
+    transition: all 0.2s ease;
+}
+
+/*al hacer :hover sobre las opciones cambia el color de fondo*/
+.cuerpo main .cursos .curso .curso-opciones:hover {
+    background-color: var(--color-primario);
+}
+
+/*al hacer :hover sobre las opciones, cambia el color del texto de cada opción*/
+.cuerpo main .cursos .curso .curso-opciones:hover p {
+    color: var(--color-fondo);
+}
+
+/* al hacer :hover sobre las opciones, cambia el color de cada icono que es un svg*/
+.cuerpo main .cursos .curso .curso-opciones:hover .curso-objeto {
+    /*las imágenes y svg creados no se pueden cambiar de color con propiedades CSS, por tanto, para */
+    /*conseguir ese efecto se deben aplicar filtros para obtener el color "deseado*/
+    /*hay una página que te crea el filtro necesario para el color que le indiques*/
+    /*es esta https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(93%) sepia(89%) saturate(4179%) hue-rotate(185deg) brightness(131%) contrast(94%);
+}
+
+/*para ir posicionando, de forma independiente cada opción de cada curso*/
+/*para ello, todas las opciones tiene la clase curso-opciones, para los estilos globales comunes a cada una de ellas*/
+/*y una clase independiente para cada una llamadas curso1, 2, 3, 4 y 5, para los estilos particulares*/
+/*la primera totalemente a la izquierda con un borde inferior izquierdo*/
+.cuerpo main .cursos .curso .co-curso1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 5px;
+}
+
+/*la segunda a un 20% de la izquierda*/
+.cuerpo main .cursos .curso .co-curso2 {
+    position: absolute;
+    bottom: 0;
+    left: 20%;    
+}
+
+/*la tercera al 40% de la izquierda*/
+.cuerpo main .cursos .curso .co-curso3 {
+    position: absolute;
+    bottom: 0;
+    left: 40%;    
+}
+
+/*la cuarta al 60% de la izquierda, también valdría a un 40% de la derecha*/
+.cuerpo main .cursos .curso .co-curso4 {
+    position: absolute;
+    bottom: 0;
+    left: 60%;    
+}
+
+/*la quita totalmente a la derecha*/
+.cuerpo main .cursos .curso .co-curso5 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 5px;
+}
+
+/*todos lo svg tiene la misma altura, 21 mm, por ello, para dimensionarlos todo iguales en altura, he usado height del 40%, en lugar de width*/
+.cuerpo main .cursos .curso .curso-opciones .curso-objeto {
+    height: 40%; /* al tener todos la misma altura, los redimensiono con height*/
+    margin-top: 10px;
+}
+
+/*texto bajo el icono de cada opción*/
+.cuerpo main .cursos .curso .curso-opciones p {
+    color: var(--color-primario);
+    margin-bottom: 15px;
+}
+
+/*ESTILOS FOOTER*/
+
+/*footer, fijado abajo, de forma que, si aparece una barra de scroll, el footer siempre permance visible en la parte inferior*/
+footer {
+    position: fixed; /* para que aparezca siempre visible en la parte inferior*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12.5vh;
+    background-color: var(--color-primario);
+}
+
+/*ubicación de los logos*/
+footer .logo-eu {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 15%;
+    height: 65%;
+}
+
+footer .logo-esp {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 35%;
+    height: 65%;
+    padding-right: 15px;
+    border-right: 1px solid var(--color-blanco);
+}
+

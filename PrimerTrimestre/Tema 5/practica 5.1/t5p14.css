@@ -1,0 +1,25 @@
+body {
+  position: relative;
+}
+
+.pelota-ej14 {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  margin: 20px auto;
+  animation: botar 1.5s infinite;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5); /* Simula gravedad */
+}
+
+@keyframes botar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-150px);
+  }
+}

@@ -273,7 +273,7 @@ header {
     width: 40px;
     height: 40px;
     background-color: brown;
-    animation: girar 4s infinite linear,cambiarColor 2s infinite alternate;
+    animation: girar 4s infinite linear, cambiarColor 2s infinite alternate;
 }
 
 @keyframes girar {
@@ -297,53 +297,88 @@ header {
     }
 }
 
-/*
+/* 
 * EJERCICIO 16
 */
-.ejer16 {
+/*.ejer16 {
   width: 100px;
   height: 100px;
-  color: #000; /* color inicial negro */
+  color: #000;
 }
 
-/* Borde cuadrado */
 .ejer16 {
-  width: 100px;
-  height: 100px;
-  color: #000; /* color inicial negro */
+    width: 100px;
+    height: 100px;
+    color: #000;
 }
 
-/* Borde cuadrado */
 .ejer16 .box {
-  stroke: currentColor;
-  stroke-width: 6;
-  fill: none;
-  transition: stroke 0.3s ease;
+    stroke: currentColor;
+    stroke-width: 6;
+    fill: none;
+    transition: stroke 0.3s ease;
 }
 
-/* Líneas */
 .ejer16 .bar {
-  stroke: currentColor;
-  stroke-width: 8;
-  stroke-linecap: round;
-  transform-box: fill-box;
-  transform-origin: 50% 50%;
-  transition: transform 0.3s ease, opacity 0.3s ease, stroke 0.3s ease;
+    stroke: currentColor;
+    stroke-width: 8;
+    stroke-linecap: round;
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    transition: transform 0.3s ease, opacity 0.3s ease, stroke 0.3s ease;
 }
 
-/* Hover: cambia color y animación */
 .ejer16:hover {
-  color: #e00000; /* rojo */
+    color: #e00000;
 }
 
 .ejer16:hover .mid {
-  opacity: 0; /* desaparece la línea central */
+    opacity: 0;
 }
 
 .ejer16:hover .top {
-  transform: translateY(20px) rotate(45deg);
+    transform: translateY(20px) rotate(45deg);
 }
 
 .ejer16:hover .bot {
-  transform: translateY(-20px) rotate(-45deg);
+    transform: translateY(-20px) rotate(-45deg);
+}*/ 
+
+.menu-icono {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.linea,
+.rectangulo {
+    fill: none;
+    stroke: black;
+    stroke-width: 4px;
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-icono:hover .linea1 {
+    transform: translateY(20px) rotate(45deg);
+    stroke: red;
+}
+
+.menu-icono:hover .linea2 {
+    opacity: 0;
+}
+
+.menu-icono:hover .linea3 {
+    transform: translateY(-20px) rotate(-45deg);
+    stroke: red;
+}
+
+.menu-icono:hover .rectangulo {
+    stroke: red;
 }

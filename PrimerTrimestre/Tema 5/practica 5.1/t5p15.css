@@ -1,0 +1,28 @@
+body {
+  position: relative;
+  height: 100vh;
+}
+
+.caja-ej15 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  /* [cite: 743, 750] */
+  animation-name: girar, cambiarColor;
+  animation-duration: 4s, 2s;
+  animation-iteration-count: infinite, infinite;
+  animation-timing-function: linear, ease-in-out;
+  animation-direction: normal, alternate;
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes cambiarColor {
+  from { background-color: #e74c3c; /* Rojo */ }
+  to { background-color: #3498db; /* Azul */ }
+}
