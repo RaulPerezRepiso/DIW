@@ -1,0 +1,296 @@
+/*REINICIO DE PROPIDADES*/
+:root {
+    --color-naranja: #ff6600;
+    --color-negro: #444;
+    --color-blanco: white;
+    --color-gris: #f4f4f4;
+    --color-rosa: lightpink;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* CABECERA */
+header {
+    width: 100%;
+    background-color: var(--color-negro);
+    position: relative;
+    overflow-y: auto;
+
+}
+
+header .header-flota-izq,
+header .header-flota-der {
+    display: inline-block;
+}
+
+header .header-flota-izq {
+    color: var(--color-blanco);
+    margin-left: 170px;
+}
+
+header .header-flota-izq object,
+header .header-flota-izq h1 {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+header .header-flota-izq:hover {
+    color: var(--color-naranja);
+    filter: invert(42%) sepia(87%) saturate(1797%) hue-rotate(359deg) brightness(99%) contrast(110%);
+}
+
+header .header-flota-izq object {
+    filter: invert(100%);
+    width: 25px;
+    height: 25px;
+    animation: girar 3s infinite linear;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+header .header-flota-der {
+    float: right;
+    margin-right: 150px;
+
+}
+
+header .header-flota-der ul li a {
+    text-decoration: none;
+    color: var(--color-blanco);
+}
+
+header .header-flota-der ul li {
+    margin-top: 15px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+
+header .header-flota-der ul li a:hover {
+    border-bottom: 3px solid var(--color-naranja);
+    animation: slideIn2 4s;
+}
+
+/* Aparezca */
+@keyframes slideIn2 {
+    from {
+        width: 0%;
+        transform: (-100%);
+        opacity: 0;
+    }
+
+    to {
+        width: 100%;
+        transform: skewX()(100%);
+    }
+}
+
+/* CUERPO */
+.servicios {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.servicios>h2::first-letter {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--color-naranja);
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.servicios .tarjeta {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    width: 300px;
+    height: 180px;
+    background-color: var(--color-gris);
+    border-radius: 5px;
+    font-weight: bold;
+    padding-top: 120px;
+}
+
+.servicios .tarjeta a {
+    display: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.servicios .tarjeta:hover {
+    text-decoration: underline;
+    background-color: var(--color-rosa);
+    transition: all 0.5s ease;
+    color: var(--color-blanco);
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: var(--color-negro);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 10px;
+}
+
+/*Página 2*/
+.contenedor {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contenedor>h2::first-letter {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--color-naranja);
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.contenedor p {
+    position: absolute;
+    z-index: 1000;
+}
+
+.contenedor img {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    z-index: 100;
+    margin-top: 30px;
+}
+
+.contenedor img:hover {
+    transform: rotate(5deg);
+    filter: sepia(100%);
+}
+
+/*Página 3*/
+.contenedor form label {
+    display: block;
+}
+
+.contenedor form input,
+.contenedor form textarea {
+    width: 90%;
+    height: 30px;
+    border-color: var(--color-naranja);
+}
+
+
+/* .contenedor form:has(label){
+    color: var(--color-naranja);
+    font-weight: bold;
+} */
+
+/* .contenedor form:focus +label {
+    color: var(--color-naranja);
+    font-weight: bold;
+} */
+
+/* .contenedor form input, .contenedor form:has(label[for="nombre"]:focus) {
+    color: var(--color-naranja);
+    font-weight: bold;
+} */
+
+/* .contenedor form input[type="text"]:focus+label {
+    color: var(--color-naranja);
+    font-weight: bold;
+} */
+
+/* .contenedor form input,
+.contenedor form:has(label[for="nombre"]) {
+    color: var(--color-naranja);
+    font-weight: bold;
+} */
+
+/* .contenedor form:focus, form input[type="text"]:focus {
+    color: var(--color-naranja);
+    font-weight: bold;
+} */
+
+/* .contenedor form input[type="text"]:focus+label{
+    color: var(--color-naranja);
+    font-weight: bold;
+}  */
+
+.contenedor form input[type="text"]:focus~label {
+    color: var(--color-negro);
+}
+
+.contenedor form input[type="email"]:focus+label {
+    color: var(--color-negro);
+}
+
+.contenedor form label[for="nombre"] {
+    color: var(--color-naranja);
+    font-weight: bold;
+}
+
+.contenedor form label[for="email"] {
+    color: var(--color-naranja);
+    font-weight: bold;
+}
+
+.contenedor form label[for="mensaje"] {
+    color: var(--color-naranja);
+    font-weight: bold;
+}
+
+.contenedor button {
+    margin-top: 5px;
+    background-color: var(--color-naranja);
+    padding: 10px;
+    border: none;
+    color: var(--color-blanco);
+    border-radius: 5px;
+    display: block;
+    box-shadow: 0 0 7px 0 var(--color-negro);
+
+}
+
+.contenedor button:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-naranja);
+    transition: all 0.5s ease;
+    border: 1px solid var(--color-naranja);
+}
+
+/* H1 */
+section h2,
+section p {
+    opacity: 0;
+    animation: slideIn 2s forwards;
+}
+
+/* Animación: deslizar desde la izquierda */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
