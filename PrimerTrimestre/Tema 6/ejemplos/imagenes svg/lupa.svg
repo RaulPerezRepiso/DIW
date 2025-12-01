@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="99.956985mm"
+   height="100mm"
+   viewBox="0 0 99.956985 100"
+   version="1.1"
+   id="svg1148"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="lupa.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1150"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.42760943"
+     inkscape:cx="205.79528"
+     inkscape:cy="336.75591"
+     inkscape:window-width="1280"
+     inkscape:window-height="730"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1145" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-50.834068,-59.504341)">
+    <path
+       style="fill:#000000;stroke-width:0.260776"
+       d="m 140.36338,159.2383 c -0.5737,-0.19012 -1.45383,-0.5548 -1.95582,-0.81043 -0.50201,-0.25561 -5.87201,-5.40744 -11.93337,-11.44851 -10.64235,-10.60673 -11.04069,-10.971 -11.60459,-10.61248 -10.74801,6.83348 -24.386838,8.34745 -36.440832,4.04512 -11.073739,-3.95247 -20.306183,-12.87748 -24.640121,-23.81965 -9.290333,-23.455885 4.16476,-49.68023 28.649288,-55.838251 20.156295,-5.06944 41.143865,5.683955 48.794905,25.001047 4.40082,11.111029 3.87045,23.478344 -1.45523,33.933614 -0.69405,1.36255 -1.52479,2.9194 -1.84609,3.45968 l -0.58417,0.98232 10.99191,11.01332 c 12.49727,12.52161 12.45179,12.46283 12.45179,16.09843 0,3.36559 -1.74845,6.1187 -4.76211,7.49838 -1.69741,0.7771 -4.16716,0.99393 -5.66556,0.49741 z M 97.080252,129.99681 C 113.0303,127.40981 123.89504,112.39502 121.31746,96.501579 118.94539,81.875171 106.05174,71.406945 91.206864,72.05506 86.837188,72.245834 83.661339,73.072688 79.602271,75.076375 69.879307,79.875949 63.889551,89.040377 63.397554,99.869877 62.560287,118.29927 78.929786,132.9407 97.080252,129.99681 Z"
+       id="path1244" />
+  </g>
+</svg>

@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --color-blanco: #fff;
+    --color-gris: #eee;
+    --color-primario: #5582f3;
+    --color-secundario: #a3bbf4;
+
+    --fuente-principal: Arial, Helvetica, sans-serif;
+
+    font-family: var(--fuente-principal);
+    background-color: var(--color-gris);
+}
+
+header {
+    background-color: var(--color-primario);
+    overflow-y: auto;
+    align-items: center;
+    height: 10vh;
+    align-content: center;
+}
+
+header .header-flota-iz {
+    border: 1px solid black;
+    float: left;
+    width: 30%;
+    margin: 0 1%;
+}
+
+header .header-flota-der {
+    border: 1px solid black;
+    float: right;
+    width: 30%;
+    margin: 0 1%;
+}
+
+header object {
+    width: 30px;
+
+}
+
+@media screen and (max-width: 1023px) {
+
+    main {
+        width: 95%;
+        margin: 0 auto;
+        background-color: var(--color-blanco);
+    }
+
+    main .tarjeta {
+        width: 90%;
+        text-align: center;
+        height: 200px;
+        border: 1px solid black;
+        margin: 10px auto;
+        border-radius: 10px
+    }
+
+    main .sec1 {
+        background-color: red;
+    }
+
+    main .sec2 {
+        background-color: yellow;
+    }
+
+    main .sec3 {
+        background-color: blue;
+    }
+
+    main .sec4 {
+        background-color: green;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        background-color: var(--color-primario);
+        width: 100%;
+        text-align: center;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+    }
+}
