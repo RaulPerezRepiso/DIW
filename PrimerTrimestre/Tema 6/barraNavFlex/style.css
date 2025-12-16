@@ -1,0 +1,46 @@
+:root {
+    --verde: rgb(15, 56, 30);
+    --blanco: white;
+    --azul: blue;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    background-color: var(--blanco);
+}
+
+.contenedor {
+    display: flex;
+    margin: 0 auto;
+    height: 20vh;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.arriba {
+    background-color: var(--verde);
+    color: var(--blanco);
+    width: 100%;
+    height: 25%;
+    text-align: center;
+}
+
+.abajo {
+    max-width: 80%;
+    text-align: center;
+    display: flex;
+    background-color: var(--azul);
+    flex: wrap;
+}
+
+.cen-izq,
+.cen-der {
+    width: 30%;
+}
+
+.cen-cen {
+    width: 40%
+}
