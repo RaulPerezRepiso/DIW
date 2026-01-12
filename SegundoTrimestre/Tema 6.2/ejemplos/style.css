@@ -1,0 +1,33 @@
+.contenedor {
+    background-color: #aaa;
+    display: grid;
+    /* row-gap: 20px;
+    column-gap: 10%; */
+    grid-template-columns: repeat(3, 100px)/*20% auto 20%*/;
+    /*Ocuparían 20 auto 20*/
+    grid-template-rows: repeat(3, 100px);
+    /*Tambien podemos poner como 100px 100px 100px; */
+    margin: 20px auto;
+    padding: 1em;
+    width: 80%;
+    height: 100vh;
+    border: 1px solid red;
+    /*Aplicar más de una propiedad*/
+    /* place-items: center end; */
+
+    /*El strecth necesita que las filas y la columnas no tengan tamaño porque lo asigna él y si ya esta asignado no funciona*/
+    /* justify-content: stretch; */
+
+    /* justify-content: space-evenly; */
+
+    /* Mueve las celdas hijas conforme al espacio del div padre */
+    align-content: space-evenly;
+}
+
+.contenedor>div {
+    /* Tamaño asignado a cada div para que no se queden pequeños por el grid */
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    border: 1px solid black;
+}

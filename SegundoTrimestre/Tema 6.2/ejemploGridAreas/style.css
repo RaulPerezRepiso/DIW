@@ -1,0 +1,58 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(16, 50%);
+    width: 80%;
+    background-color: #aaa;
+    grid-template-areas:
+        "ppal ppal c3n1 c4n1"
+        "ppal ppal c3n1 c4n1"
+        "ppal ppal c3n1 c4n1"
+        "ppal ppal c3n2 c4n1"
+        "ppal ppal c3n2 c4n2"
+        "ppal ppal c3n3 c4n2"
+        "ppal ppal c3n3 c4n2"
+        "pie pie c3n3 c4n2";
+}
+
+.contenedor>div {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ppal {
+    background-color: turquoise;
+    grid-area: ppal;
+}
+
+#pie {
+    background-color: red;
+    grid-area: pie;
+}
+
+#c3n1 {
+    background-color: aqua;
+    grid-area: c3n1;
+}
+
+#c3n2 {
+    background-color: burlywood;
+    grid-area: c3n2;
+}
+
+#c3n3 {
+    background-color: yellowgreen;
+    grid-area: c3n3;
+}
+
+#c4n1 {
+    background-color: olivedrab;
+    grid-area: c4n1;
+}
+
+#c4n2 {
+    background-color: brown;
+    grid-area: c4n2;
+}
