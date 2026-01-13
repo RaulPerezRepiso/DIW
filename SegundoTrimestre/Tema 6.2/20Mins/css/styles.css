@@ -1,0 +1,91 @@
+/* Ajustes y Reinicios Globales */
+:root {
+    /* COLORES */
+    --color-letra-footer: #767676;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-azul: #0B419B;
+}
+
+/* Estilos por defecto */
+body {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    height: 90px;
+
+
+}
+
+/* CABECERA */
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    /* separa los elementos */
+    align-items: center;
+    padding: 0 20px;
+    /* espacio lateral */
+    background-color: var(--color-azul);
+    height: 70px;
+
+}
+
+/* Barra Desplegable */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icono {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-icono svg {
+    width: 100%;
+    height: 100%;
+}
+
+.linea {
+    fill: white;
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: 0.3s ease;
+}
+
+/* --- ANIMACIÓN AL HACER CLICK --- */
+#menu-toggle:checked+.menu-icono .linea1 {
+    transform: translateY(6px) rotate(45deg);
+}
+
+#menu-toggle:checked+.menu-icono .linea2 {
+    opacity: 0;
+}
+
+#menu-toggle:checked+.menu-icono .linea3 {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+
+.svgLogo {
+    width: 13%;
+    height: auto;
+}
+
+.icono{
+    margin-bottom: 1%;
+}
+
+/* PIE */
+footer {
+    color: var(--color-letra-footer);
+    font-size: 10px;
+    text-align: center;
+    font-family: serif;
+    bottom: 0;
+    position: fixed;
+}
