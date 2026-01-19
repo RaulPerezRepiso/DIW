@@ -14,13 +14,15 @@
 <body>
     <!-- CABECERA -->
     <header class="cabecera">
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icono"> <svg viewBox="0 0 24 24">
-                <rect class="linea linea1" x="3" y="5" width="18" height="2" />
-                <rect class="linea linea2" x="3" y="11" width="18" height="2" />
-                <rect class="linea linea3" x="3" y="17" width="18" height="2" />
-            </svg>
-        </label>
+        <div class="cabecera-izq">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icono"> <svg viewBox="0 0 24 24">
+                    <rect class="linea linea1" x="3" y="5" width="18" height="2" />
+                    <rect class="linea linea2" x="3" y="11" width="18" height="2" />
+                    <rect class="linea linea3" x="3" y="17" width="18" height="2" />
+                </svg>
+            </label>
+        </div>
 
         <!-- SVG DE 20Minutos -->
         <svg class="svgLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232.8 37.9">
@@ -47,33 +49,83 @@
             <path fill="#FFFFFF"
                 d="M44.4,26.7c0,3.1-2,5.9-5.9,5.9s-5.9-2.7-5.9-5.8v-15.5c0-3.3,2.2-5.9,6-5.9,2.4,0,4,1,5,2.5V.8c-1.5-.5-3.2-.7-5-.7-6.6,0-12.8,3.6-12.8,11.2v15.7c0,7.8,6.4,10.9,12.8,10.9s12.7-3.7,12.7-11.1v-15.4c0-5.4-2.9-8.7-6.8-10.3l-.1,25.6Z" />
         </svg>
-
-        <div class="icono">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
-                <!-- Fondo azul circular -->
-                <circle cx="50" cy="60" r="25" fill="white" />
-                <!-- <circle cx="60" cy="53" r="8" fill="#0B419B" />
-                <circle cx="40" cy="53" r="8" fill="#0B419B" /> -->
-                <circle cx="50" cy="53" r="8" fill="#0B419B" />
-                <path d="M35 78 C35 60, 65 60, 65 78" fill="#0B419B" />
-            </svg>
-
+        <div class="cabecera-der">
+            <div class="divFlecha">
+                <p>EDICIONES</p>
+                <img src="img/flechaAbajo.svg" alt="" class="flecha">
+            </div>
+            <div class="icono">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+                    <!-- Fondo azul circular -->
+                    <circle cx="50" cy="60" r="25" fill="white" />
+                    <circle cx="50" cy="53" r="8" fill="#0B419B" />
+                    <path d="M35 78 C35 60, 65 60, 65 78" fill="#0B419B" />
+                </svg>
+            </div>
         </div>
-
     </header>
 
-
-
     <!-- MAIN -->
-    <main></main>
+    <main>
+        <div class="enlaces">
+            <a href="">NACIONAL</a>
+            <label for="">·</label>
+            <a href="">INTERNACIONAL</a>
+            <label for="">·</label>
+            <a href="">ECONOMÍA</a>
+            <label for="">·</label>
+            <a href="">OPINIÓN</a>
+            <label for="">·</label>
+            <a href="">TV</a>
+            <label for="">·</label>
+            <a href="">GENTE</a>
+            <label for="">·</label>
+            <a href="">DEPORTES</a>
+            <label for="">·</label>
+            <a href="">ED.IMPRESA</a>
+            <label for="">·</label>
+            <a href="">PASATIEMPOS</a>
+        </div>
+
+        <div class="contenido">
+            <div class="directo">
+               <h4>JULIO IGLESIAS</h4>
+               <div>
+                 <p class="dir">Dos extrabajadoras lo acusan de agredirlas sexualmente</p>
+               </div>
+            </div>
+            <p class="info">Sánchez vuelve a apostar por incentivos fiscales para caseros sin haber pasado por el
+                Congreso los que
+                anució hace justo un año</p>
+            <p class="gris"><span>ISABEL FUENTES</span>
+                Una bonificación del 100% en el IRPF para los propieatarios que no suban el alquiler a los inquilinos
+                que tengan que renovar su contrato este año. Esta medida en una de las tres patas de un nuevo real
+                decreto-ley.</p>
+            <p class="azul">- Moncloa inicia 2026 reavivando su enfrentamiento con todos sus sociosde izquierdas por la
+                vivienda |
+                por DANIEL RÍOS y MARTA MORENO</p>
+            <img src="img/primera.webp" alt="" class="primera">
+            <p class="info2">
+                Angustia de los iraníes en España por la "matanza" de opositores: "Toda mi generación está ahora
+                protestando en la calle"</p>
+            <p class="gris2">
+                <span>AMAYA LARRAÑETA</span>
+            </p>
+            <p class="azul2">
+                - DIRECTO | Jamenei celebralas movilizaciones a favor del régimen: "Son una advertencia a los
+                estadounidenses"
+            </p>
+        </div>
+    </main>
 
     <!-- FOOTER -->
     <footer>
-        <span class="footer">© 20 Minutos Editora, S.L.</span>
-        <p>Queda prohibida toda reproducción sin permiso escrito de la empresa a los
-            efectos del artículo 32.1, párrafo segundo, de la Ley de Propiedad Intelectual. Asimismo, a los efectos
-            establecidos en el artículo 33.1 de Ley de Propiedad Intelectual, la empresa hace constar la correspondiente
-            reserva de derechos, por sí y por medio de sus redactores o autores.</p>
+        <span class="footer">© 20 Minutos Editora, S.L·/span>
+            <p>Queda prohibida toda reproducción sin permiso escrito de la empresa a los
+                efectos del artículo 32.1, párrafo segundo, de la Ley de Propiedad Intelectual. Asimismo, a los efectos
+                establecidos en el artículo 33.1 de Ley de Propiedad Intelectual, la empresa hace constar la
+                correspondiente
+                reserva de derechos, por sí y por medio de sus redactores o autores·/p>
     </footer>
 </body>
 

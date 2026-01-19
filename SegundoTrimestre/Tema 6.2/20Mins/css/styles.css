@@ -1,6 +1,5 @@
 /* Ajustes y Reinicios Globales */
 :root {
-    /* COLORES */
     --color-letra-footer: #767676;
     --color-blanco: #FFFFFF;
     --color-negro: #000000;
@@ -10,28 +9,29 @@
 /* Estilos por defecto */
 body {
     box-sizing: border-box;
-    border: 0;
     padding: 0;
     margin: 0;
     font-family: roboto;
     background-color: var(--color-blanco);
     color: var(--color-negro);
-    height: 90px;
-
-
 }
 
 /* CABECERA */
 .cabecera {
     display: flex;
     justify-content: space-between;
-    /* separa los elementos */
     align-items: center;
     padding: 0 20px;
-    /* espacio lateral */
     background-color: var(--color-azul);
     height: 70px;
+}
 
+/* Grupos izquierda y derecha */
+.cabecera-izq,
+.cabecera-der {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 /* Barra Desplegable */
@@ -57,7 +57,7 @@ body {
     transition: 0.3s ease;
 }
 
-/* --- ANIMACIÓN AL HACER CLICK --- */
+/* Animación hamburguesa */
 #menu-toggle:checked+.menu-icono .linea1 {
     transform: translateY(6px) rotate(45deg);
 }
@@ -70,14 +70,134 @@ body {
     transform: translateY(-6px) rotate(-45deg);
 }
 
-
+/* LOGO CENTRADO */
 .svgLogo {
-    width: 13%;
+    width: 180px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.icono{
-    margin-bottom: 1%;
+/* Icono usuario */
+.icono svg {
+    margin-bottom: 15%;
+}
+
+/* EDICIONES + flecha */
+.divFlecha {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: var(--color-blanco);
+}
+
+.flecha {
+    width: 24px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.flecha {
+    filter: invert(1) sepia(1) hue-rotate(200deg);
+}
+
+.divFlecha:hover .flecha {
+    transform: rotate(180deg);
+}
+
+/* MAIN */
+/* Div 1 */
+.enlaces {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2%;
+    gap: 10px;
+
+}
+
+.enlaces label {
+    color: var(--color-azul);
+    font-weight: bold;
+}
+
+.enlaces a {
+    color: var(--color-azul);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlaces a:last-child {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Div 2 */
+main{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.info {
+    font-weight: bold;
+    font-size: xx-large;
+    grid-area: info;
+}
+
+.gris {
+    color: var(--color-letra-footer);
+    grid-area: gris;
+}
+
+.azul {
+    color: var(--color-azul);
+    grid-area: azul;
+}
+
+.info2 {
+    font-weight: bold;
+    font-size: xx-large;
+    grid-area: info2;
+}
+
+.gris2 {
+    color: var(--color-letra-footer);
+    grid-area: gris2;
+}
+
+.azul2 {
+    color: var(--color-azul);
+    grid-area: azul2;
+}
+
+.primera {
+    width: 80%;
+    grid-area: primera;
+}
+
+/* Tenemos que asiganar nombres para usar el template areas */
+.contenido {
+    margin-top: 5%;
+    display: grid;
+    grid-template-areas:
+        "info info primera primera primera primera primera primera"
+        "info info primera primera primera primera primera primera"
+        "gris gris info2 info2 info2 info2 info2 info2"
+        "azul azul gris2 azul2 azul2 azul2 azul2 azul2"
+}
+
+h4{
+    background-color: blue;
+    color: var(--color-blanco);
+}
+
+div .dir{
+    background-color: var(--color-blanco);
+    color: var(--color-letra-footer);
 }
 
 /* PIE */
@@ -86,6 +206,5 @@ footer {
     font-size: 10px;
     text-align: center;
     font-family: serif;
-    bottom: 0;
-    position: fixed;
+    width: 100%;
 }
