@@ -135,8 +135,8 @@ body {
     border-radius: 5px;
 }
 
-/* Div 2 */
-main{
+/* MAIN */
+main {
     width: 80%;
     height: 80%;
     margin: 0 auto;
@@ -146,6 +146,7 @@ main{
     font-weight: bold;
     font-size: xx-large;
     grid-area: info;
+    margin-top: auto;
 }
 
 .gris {
@@ -162,11 +163,14 @@ main{
     font-weight: bold;
     font-size: xx-large;
     grid-area: info2;
+    margin-top: auto;
+    margin-left: 10%;
 }
 
 .gris2 {
     color: var(--color-letra-footer);
     grid-area: gris2;
+    margin-left: 10%;
 }
 
 .azul2 {
@@ -175,14 +179,21 @@ main{
 }
 
 .primera {
-    width: 80%;
+    width: 90%;
+    margin-left: auto;
     grid-area: primera;
 }
 
 /* Tenemos que asiganar nombres para usar el template areas */
 .contenido {
     margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    gap: 15px;
     display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas:
         "info info primera primera primera primera primera primera"
         "info info primera primera primera primera primera primera"
@@ -190,12 +201,115 @@ main{
         "azul azul gris2 azul2 azul2 azul2 azul2 azul2"
 }
 
-h4{
+.trump {
+    grid-area: trump;
+    width: 300px;
+}
+
+.infoT {
+    grid-area: infoT;
+}
+
+.infoT2 {
+    grid-area: infoT2;
+}
+
+.infoC1 {
+    grid-area: infoC1;
+}
+
+.encarna {
+    grid-area: encarna;
+    border-radius: 150px;
+    width: 150px;
+}
+
+.infoC2 {
+    grid-area: infoC2;
+}
+
+.juan {
+    grid-area: juan;
+    border-radius: 150px;
+    width: 120px;
+
+}
+
+.chema {
+    grid-area: chema;
+    width: 300px;
+}
+
+.infoD {
+    grid-area: infoD;
+}
+
+.contenido2 {
+    margin-top: 5%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "trump trump infoC1 encarna chema chema"
+        "trump trump infoC1 encarna chema chema"
+        "infoT infoT infoC2 juan infoD infoD "
+        "infoT2 infoT2 infoC2 juan infoD infoD";
+}
+
+.xavi {
+    grid-area: xavi;
+    width: 600px;
+}
+
+
+.infoX {
+    grid-area: infoX;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.nueve {
+    grid-area: nueve;
+}
+
+.mou {
+    grid-area: mou;
+    width: 200px;
+}
+
+.infoM {
+    grid-area: infoM;
+    font-weight: bold;
+}
+
+.infoM span {
+    color: red;
+    font-size: xx-small;
+}
+
+.contenido3 {
+    margin-top: 5%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "xavi xavi xavi xavi xavi xavi nueve nueve"
+        "xavi xavi xavi xavi xavi xavi mou mou"
+        "infoX infoX infoX infoX infoX infoX infoM infoM";
+}
+
+h4 {
     background-color: blue;
     color: var(--color-blanco);
 }
 
-div .dir{
+div .dir {
     background-color: var(--color-blanco);
     color: var(--color-letra-footer);
 }
