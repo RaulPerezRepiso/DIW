@@ -1,0 +1,188 @@
+:root {
+    --azul: #04aeef;
+    --azul-oscuro: #0f5aca;
+    --gris-claro: #eff0f6;
+    --gris-oscuro: #c5c6cc;
+
+    --letra: sans-serif;
+
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: var(--letra);
+}
+
+/* CABECERA */
+.cabecera {
+    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.cabecera .input-buscar {
+    width: 700px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 50px;
+
+}
+
+.cabecera .menu-rayitas .menu-icono {
+    width: 30px;
+    height: 30px;
+    /* Color de las líneas */
+    stroke: var(--gris-claro);
+    /* Grosor */
+    stroke-width: 6;
+}
+
+.cabecera .menu-rayitas {
+    margin-right: 5%;
+}
+
+.cabecera .logo-movil {
+    display: none;
+}
+
+.cabecera .logo-desktop {
+    display: block;
+    width: 10%;
+    margin-left: 5%;
+}
+
+/* RESPOSINVE PARA MÓVIl */
+@media screen and (max-width: 1023px) {
+    .cabecera .logo-movil {
+        display: block;
+    }
+
+    .cabecera .logo-desktop {
+        display: none;
+    }
+}
+
+/* IMG */
+#titular-ppal img {
+    width: 800px;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.lateral img {
+    width: 100%;
+}
+
+/* GRID */
+.titular-ppal {
+    grid-area: pp1;
+}
+
+#lateral-1 {
+    grid-area: l1;
+}
+
+
+#lateral-2 {
+    grid-area: l2;
+}
+
+#lateral-3 {
+    grid-area: l3;
+}
+
+#lateral-4 {
+    grid-area: l4;
+}
+
+#inferior-1 {
+    grid-area: i1;
+    width: 80%;
+    font-weight: bold;
+}
+
+#inferior-2 {
+    grid-area: i2;
+    width: 80%;
+    font-weight: bold;
+}
+
+main .titular-sub {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 5px solid var(--azul-oscuro);
+}
+
+.principales {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 20%);
+    row-gap: 15%;
+    column-gap: 1%;
+    grid-template-areas:
+        "l1 pp1 pp1 pp1"
+        "l2 pp1 pp1 pp1"
+        "l3 i1 l4 i2 ";
+}
+
+#titular-ppal img {
+    position: relative;
+    z-index: 1;
+}
+
+#titular-ppal h2 {
+    position: absolute;
+    font-weight: bold;
+    color: var(--gris-claro);
+    z-index: 100;
+    width: 55%;
+    top: 80%;
+    left: 32%;
+}
+
+.lateral {
+    position: relative;
+    /* width: 100px;
+    background-color: black; */
+}
+
+#lateral-1 img {
+    position: absolute;
+    z-index: 1;
+}
+
+#lateral-1 p {
+    position: absolute;
+    font-weight: bold;
+    color: var(--gris-claro);
+    width: 92%;
+    top: 85%;
+    left: 3%;
+    z-index: 10;
+}
+
+#lateral-2 img {
+    position: absolute;
+    z-index: 1;
+}
+
+#lateral-2 p {
+    position: absolute;
+    font-weight: bold;
+    color: var(--gris-claro);
+    top: 80%;
+    left: 3%;
+    z-index: 10;
+}

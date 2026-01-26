@@ -135,6 +135,33 @@ body {
     border-radius: 5px;
 }
 
+/* Barra Noticia */
+.noticia {
+    display: flex;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.julio {
+    background-color: blue;
+    color: var(--color-blanco);
+    padding: 10px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.infoJ {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
 /* MAIN */
 main {
     width: 80%;
@@ -198,7 +225,8 @@ main {
         "info info primera primera primera primera primera primera"
         "info info primera primera primera primera primera primera"
         "gris gris info2 info2 info2 info2 info2 info2"
-        "azul azul gris2 azul2 azul2 azul2 azul2 azul2"
+        "azul azul gris2 azul2 azul2 azul2 azul2 azul2";
+    column-gap: 1%;
 }
 
 .trump {
@@ -257,6 +285,7 @@ main {
         "trump trump infoC1 encarna chema chema"
         "infoT infoT infoC2 juan infoD infoD "
         "infoT2 infoT2 infoC2 juan infoD infoD";
+    column-gap: 1%;
 }
 
 .xavi {
@@ -302,6 +331,7 @@ main {
         "xavi xavi xavi xavi xavi xavi nueve nueve"
         "xavi xavi xavi xavi xavi xavi mou mou"
         "infoX infoX infoX infoX infoX infoX infoM infoM";
+    column-gap: 1%;
 }
 
 h4 {

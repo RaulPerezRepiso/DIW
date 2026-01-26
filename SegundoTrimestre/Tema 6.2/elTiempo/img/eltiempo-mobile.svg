@@ -1,0 +1,27 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 14">
+<g id="Group 12">
+<g id="Group 9 Copy 5">
+<g id="Group 3">
+<rect id="Rectangle" width="32" height="32" rx="16" fill="white"/>
+<g id="Object">
+<mask id="mask0_76_31662" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+<rect id="Rectangle_2" width="32" height="32" rx="16" fill="white"/>
+</mask>
+<g mask="url(#mask0_76_31662)">
+<rect id="Rectangle_3" x="0.0310364" y="27.5615" width="32" height="4.43841" fill="white"/>
+<rect id="Rectangle_4" x="0.0310364" y="28.5859" width="32" height="3.41416" fill="#FCB400"/>
+<path id="Combined-Shape-path" fill-rule="evenodd" clip-rule="evenodd" d="M18.6541 4.68677H14.4285L13.0703 8.72168H10.5047L9.90106 12.1358H12.4666L11.1084 19.4297C10.9575 19.8953 10.9575 20.5161 10.9575 20.9816C10.9575 22.6887 11.5611 24.551 15.0322 24.551C16.6922 24.551 18.2014 24.3958 19.2578 23.775L19.7105 20.8264C19.2578 20.8264 18.3308 20.9816 17.2959 20.8264C16.261 20.6712 15.9377 20.2057 15.9377 19.5849C15.9377 19.2745 17.2959 12.1358 17.2959 12.1358H21.5215L22.1252 8.72168H17.8996L18.6541 4.68677Z" fill="#00AEEF"/>
+</g>
+</g>
+<rect id="Rectangle_5" x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="white"/>
+<mask id="mask1_76_31662" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+<rect id="Rectangle_6" x="0.5" y="0.5" width="31" height="31" rx="15.5" fill="white" stroke="white"/>
+</mask>
+<g mask="url(#mask1_76_31662)">
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
