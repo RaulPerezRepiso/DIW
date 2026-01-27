@@ -57,6 +57,29 @@ body {
     margin-left: 5%;
 }
 
+.menu-rayitas {
+    cursor: pointer;
+}
+
+.menu-icono .linea {
+    transition: 0.3s ease;
+    transform-origin: center;
+}
+
+/* Estado activo al pasar el ratón */
+.menu-rayitas:hover .linea1 {
+    transform: translateY(15px) rotate(45deg);
+}
+
+.menu-rayitas:hover .linea2 {
+    opacity: 0;
+}
+
+.menu-rayitas:hover .linea3 {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+
 /* RESPOSINVE PARA MÓVIl */
 @media screen and (max-width: 1023px) {
     .cabecera .logo-movil {
@@ -154,8 +177,31 @@ main .titular-sub {
 
 .lateral {
     position: relative;
-    /* width: 100px;
-    background-color: black; */
+    width: 100%;
+}
+
+#lateral-1 {
+    height: 180%;
+    background-color: black;
+    border-radius: 8px;
+}
+
+#lateral-2 {
+    height: 180%;
+    background-color: black;
+    border-radius: 8px;
+}
+
+#lateral-3 {
+    height: 160%;
+    background-color: black;
+    border-radius: 8px;
+}
+
+#lateral-4 {
+    height: 160%;
+    background-color: black;
+    border-radius: 8px;
 }
 
 #lateral-1 img {
@@ -185,4 +231,112 @@ main .titular-sub {
     top: 80%;
     left: 3%;
     z-index: 10;
+}
+
+/* CONTENEDOR 2 */
+.eltiempo-play {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    gap: 1%;
+    position: relative;
+    overflow: hidden;
+}
+
+.eltiempo-play-div {
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    height: 80%;
+    z-index: 1;
+}
+
+.eltiempo-play-div div {
+    position: absolute;
+}
+
+.eltiempo-play-div p {
+
+    color: white;
+    font-weight: bold;
+    margin-left: 5%;
+    z-index: 100;
+    margin-bottom: 15%;
+}
+
+div img {
+    width: 350px;
+}
+
+/* FOOTER */
+.footer1 {
+    background-color: var(--gris-claro);
+    padding: 40px 0;
+}
+
+#titulo-pie-parte1 {
+    border-bottom: 2px solid var(--gris-oscuro);
+    padding-bottom: 2%;
+}
+
+.pie-parte1 {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    /* Para que el título ocupe toda la fila */
+    position: relative;
+}
+
+#pie1 div,
+#pie2 div,
+#pie3 div {
+    border-right: 2px solid var(--gris-oscuro);
+}
+
+#titulo-pie-parte1 {
+    grid-column: 1 / -1;
+    /* Ocupa las 4 columnas */
+    margin-bottom: 10px;
+}
+
+.pie-parte1 h4 {
+    margin-bottom: 10px;
+}
+
+/* FOOTER 2 */
+.footer2 {
+    background-color: var(--gris-oscuro);
+    padding: 30px 0;
+}
+
+.pie-parte2 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icono-apps {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.icono-redes {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.en-tu-web p {
+    margin-bottom: 25%;
+    margin-left: 15%;
+}
+
+.en-tu-web a {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
 }
