@@ -1,0 +1,253 @@
+/* Cargar valores de colores y letras para llamar con var */
+:root {
+  /* COLORES */
+  --color-principal: #0b419b;
+  --color-blanco: white;
+  --color-gris: #f1f1f1;
+
+  /* FUENTES */
+  --fuente: sans-serif;
+}
+
+/* Valores por defecto para el cuerpo */
+body {
+  background-color: var(--color-principal);
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: var(--fuente);
+  background-color: var(--color-blanco);
+}
+
+/* HEADER */
+header {
+  background-color: var(--color-principal);
+  height: 7vh;
+  /* Propiedades para que se vea todo al medio */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+header nav {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+header .header-menu-rayitas {
+  width: 30%;
+  text-align: left;
+}
+
+header .header-logo-20minutos {
+  width: 30%;
+  text-align: center;
+}
+
+header .header-logo-20minutos object {
+  width: 60%;
+}
+
+header .header-menu-sesion {
+  width: 30%;
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+header .header-menu-sesion .icono-usuario {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--color-blanco);
+}
+
+header .header-menu-sesion span {
+  color: var(--color-blanco);
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+svg {
+  width: 35px;
+}
+
+/* Rellenamos el svg para que funcione */
+.linea {
+  fill: none;
+  stroke: var(--color-blanco);
+  stroke-width: 8px;
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Aplicamos el transfor para las 3 rayas */
+.menu-icono:hover .linea1 {
+  transform: translateY(20px) rotate(45deg);
+}
+
+.menu-icono:hover .linea2 {
+  opacity: 0;
+}
+
+.menu-icono:hover .linea3 {
+  transform: translateY(-20px) rotate(-45deg);
+}
+
+/* Animación de la campana de la noticia */
+@keyframes campana {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.campana-svg {
+  filter: invert(1);
+  width: 10%;
+  animation-name: campana;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* Ajuste de la barra y asignación de id para el grid */
+.barra-notificacion {
+  background-color: var(--color-principal);
+  padding: 10px;
+  font-weight: bold;
+  color: var(--color-blanco);
+  grid-area: barra-not;
+}
+
+.barra-texto {
+  background-color: var(--color-gris);
+  padding: 10px;
+  font-weight: bold;
+  grid-area: barra-txt;
+}
+
+/* Distribución del GRID */
+.barra {
+  margin: 10px auto;
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "barra-not barra-txt barra-txt barra-txt barra-txt barra-txt";
+}
+
+/* --- MAIN --- */
+.noticia {
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.foto-autor {
+  display: inline-block;
+  border-radius: 50%;
+  filter: grayscale(1);
+}
+
+.autor {
+  text-transform: uppercase;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.tiempo {
+  color: red;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-principal);
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+.cursiva {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+#not1 {
+  grid-area: not1;
+}
+
+#not2 {
+  grid-area: not2;
+}
+
+#not3 {
+  grid-area: not3;
+}
+
+#not4 {
+  display: flex;
+  flex-wrap: no-wrap;
+  grid-area: not4;
+  justify-items: center;
+}
+
+.izq {
+  width: 55%;
+}
+
+.der {
+  width: 40%;
+  text-align: right;
+}
+
+#not5 {
+  display: flex;
+  flex-wrap: no-wrap;
+  grid-area: not5;
+  justify-content: space-around;
+}
+
+#not6 {
+  grid-area: not6;
+}
+
+#not7 {
+  grid-area: not7;
+}
+
+#not8 {
+  grid-area: not8;
+}
+
+#not9 {
+  grid-area: not9;
+}
+
+/* Distribución de las noticias con grid */
+.titulares {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  grid-template-rows: repeat(9, auto);
+  grid-template-areas:
+    "not1 not2 not2"
+    "not1 not2 not2"
+    "not1 not2 not2"
+    "not3 not4 not6"
+    "not3 not5 not6"
+    "not7 not7 not8"
+    "not7 not7 not9"
+    "not7 not7 not9";
+  justify-content: center;
+  gap: 20px;
+}
