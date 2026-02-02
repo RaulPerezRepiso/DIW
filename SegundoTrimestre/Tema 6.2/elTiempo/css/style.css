@@ -4,8 +4,6 @@
     --gris-claro: #eff0f6;
     --gris-oscuro: #c5c6cc;
 
-    --letra: sans-serif;
-
 }
 
 body {
@@ -31,7 +29,6 @@ body {
     height: 30px;
     margin: 0 auto;
     border-radius: 50px;
-
 }
 
 .cabecera .menu-rayitas .menu-icono {
@@ -79,21 +76,9 @@ body {
     transform: translateY(-15px) rotate(-45deg);
 }
 
-
-/* RESPOSINVE PARA MÓVIl */
-@media screen and (max-width: 1023px) {
-    .cabecera .logo-movil {
-        display: block;
-    }
-
-    .cabecera .logo-desktop {
-        display: none;
-    }
-}
-
 /* IMG */
 #titular-ppal img {
-    width: 800px;
+    width: 96%;
 }
 
 img {
@@ -105,7 +90,7 @@ img {
 }
 
 /* GRID */
-.titular-ppal {
+#titular-ppal {
     grid-area: pp1;
 }
 
@@ -128,13 +113,13 @@ img {
 
 #inferior-1 {
     grid-area: i1;
-    width: 80%;
+    width: 100%;
     font-weight: bold;
 }
 
 #inferior-2 {
     grid-area: i2;
-    width: 80%;
+    width: 100%;
     font-weight: bold;
 }
 
@@ -181,27 +166,29 @@ main .titular-sub {
 }
 
 #lateral-1 {
-    height: 180%;
     background-color: black;
     border-radius: 8px;
 }
 
 #lateral-2 {
-    height: 180%;
     background-color: black;
     border-radius: 8px;
 }
 
 #lateral-3 {
-    height: 160%;
     background-color: black;
     border-radius: 8px;
 }
 
 #lateral-4 {
-    height: 160%;
     background-color: black;
     border-radius: 8px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 #lateral-1 img {
@@ -235,42 +222,48 @@ main .titular-sub {
 
 /* CONTENEDOR 2 */
 .eltiempo-play {
-    grid-template-columns: repeat(4, 1fr);
     display: grid;
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     width: 80%;
-    gap: 1%;
-    position: relative;
-    overflow: hidden;
+    margin: 0 auto;
 }
 
+/* Cada tarjeta */
 .eltiempo-play-div {
-    background-color: rgb(0, 0, 0);
+    position: relative;
     border-radius: 8px;
-    height: 80%;
-    z-index: 1;
+    overflow: hidden;
+    height: 200px;
+    background: black;
 }
 
-.eltiempo-play-div div {
-    position: absolute;
+/* Imagen dentro de la tarjeta */
+.eltiempo-play-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
+/* Texto sobre la imagen */
 .eltiempo-play-div p {
-
+    position: absolute;
+    top: 65%;
+    left: 10px;
+    right: 10px;
     color: white;
     font-weight: bold;
-    margin-left: 5%;
-    z-index: 100;
-    margin-bottom: 15%;
+    font-size: 1rem;
+    z-index: 2;
+    padding: 8px;
+    border-radius: 4px;
 }
 
-div img {
-    width: 350px;
-}
 
 /* FOOTER */
 .footer1 {
+    margin-top: 5%;
     background-color: var(--gris-claro);
     padding: 40px 0;
 }
@@ -339,4 +332,176 @@ div img {
     border: 1px solid black;
     border-radius: 8px;
     padding: 10px;
+}
+
+.ver-mas {
+    text-align: right;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+
+/* RESPOSINVE PARA MÓVIl */
+@media screen and (max-width: 1023px) {
+
+    /* CABECERA */
+    .cabecera .logo-movil {
+        display: block;
+    }
+
+    .cabecera .logo-desktop {
+        display: none;
+    }
+
+    .cabecera .input-buscar {
+        width: 90%;
+        height: 30px;
+        margin: 0 auto;
+        border-radius: 50px;
+    }
+
+    /* MAIN */
+    main {
+        margin-top: 18%;
+        width: 100%;
+    }
+
+    #titular-ppal {
+        position: relative;
+    }
+
+    /* Imagen principal */
+    #titular-ppal img {
+        width: 100%;
+    }
+
+    /* Texto sobre imagen principal */
+    #titular-ppal h2 {
+        position: initial;
+        width: 100%;
+        color: black;
+        font-size: 1.2rem;
+    }
+
+    /* GRID PRINCIPAL */
+    .principales {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+        column-gap: 20px;
+        grid-template-areas:
+            "pp1 pp1"
+            "l1 l1"
+            "l2 l2"
+            "l3 i1"
+            "l4 i2";
+    }
+
+    /* LATERALES */
+    .lateral {
+        position: relative;
+        height: auto;
+        overflow: visible;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        background-color: white !important;
+    }
+
+    .lateral img {
+        position: relative !important;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        margin-right: 50px;
+    }
+
+    .lateral p {
+        position: static;
+        margin-top: 15%;
+        color: black !important;
+        font-weight: bold;
+        padding: 8px;
+        z-index: 10;
+
+    }
+
+    /* INFERIORES */
+    #inferior-1,
+    #inferior-2 {
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: initial;
+    }
+
+
+    /* FOOTER 1 */
+    .pie-parte1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #titulo-pie-parte1 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--gris-oscuro);
+        padding-bottom: 10px;
+    }
+
+    #pie1 div,
+    #pie2 div,
+    #pie3 div {
+        border-right: none;
+    }
+
+    #pie1,
+    #pie2,
+    #pie3,
+    #pie4 {
+        padding-bottom: 10px;
+    }
+
+    .cont-textos-pie p {
+        margin: 5px 0;
+    }
+
+
+    /* FOOTER 2 */
+    .pie-parte2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .icono-apps {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .icono-redes {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .en-tu-web a {
+        display: inline-block;
+        margin-top: 10px;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 10px;
+    }
 }
