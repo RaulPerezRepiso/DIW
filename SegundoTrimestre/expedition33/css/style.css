@@ -1,0 +1,399 @@
+:root {
+    --color-primario: #ddb783;
+    --color-negro: #222;
+    --color-blanco: white;
+
+    --fuente: Arial, sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: var(--fuente);
+    margin: 0 auto;
+    padding: 0;
+    background-image: url(../img/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* CABECERA */
+.cabecera {
+    display: flex;
+    background-color: var(--color-negro);
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+.logo-entero {
+    display: none;
+}
+
+.logo-numero {
+    display: block;
+    width: 60px;
+}
+
+.div-buscar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.input-buscar {
+    width: 100%;
+    height: 30px;
+    border-radius: 40px;
+    border: none;
+}
+
+.enlaces-desktop {
+    display: none;
+}
+
+.menu-rayitas {
+    display: flex;
+    width: 30px;
+    justify-content: end;
+    align-items: center;
+}
+
+.linea {
+    fill: none;
+    stroke: var(--color-primario);
+    stroke-width: 8px;
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Aplicamos el transfor para las 3 rayas */
+.menu-icono:hover .linea1 {
+    transform: translateY(20px) rotate(45deg);
+}
+
+.menu-icono:hover .linea2 {
+    opacity: 0;
+}
+
+.menu-icono:hover .linea3 {
+    transform: translateY(-20px) rotate(-45deg);
+}
+
+/* SECCIÓN PRINCIPAL */
+.principal {
+    background-color: var(--color-negro);
+    width: 90%;
+    margin: 5px auto;
+    padding: 7px;
+}
+
+.principal>h2 {
+    width: 95%;
+    color: var(--color-primario);
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-bottom: var(--color-primario) 3px solid;
+}
+
+.seccion-1 {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+}
+
+.articulos img {
+    width: 100%;
+}
+
+.seccion-1 img {
+    border: var(--color-primario) 3px solid;
+}
+
+
+#articulo-2 {
+    background-color: var(--color-primario);
+    display: grid;
+    grid-template-areas:
+        "t1"
+        "p1"
+        "p2"
+        "p3"
+        "p4";
+    row-gap: 15px;
+    padding: 20px;
+}
+
+#art2-tit {
+    grid-area: t1;
+    text-align: left;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#img-1 {
+    grid-area: p1;
+}
+
+#img-2 {
+    grid-area: p2;
+}
+
+#img-3 {
+    grid-area: p3;
+}
+
+#img-4 {
+    grid-area: p4;
+}
+
+.img-personajes img {
+    width: 100%;
+    filter: grayscale(1);
+    transition: 0.3s ease;
+    border: none;
+}
+
+.img-personajes img:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+#articulo-1,
+#articulo-4,
+#articulo-5 {
+    position: relative;
+}
+
+#articulo-3>img {
+    width: 50%;
+}
+
+#articulo-1 h2,
+#articulo-4 h2,
+#articulo-5 h2 {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    width: 90%;
+    color: var(--color-blanco);
+    border-bottom: 3px solid var(--color-blanco);
+    font-size: 1.2rem;
+}
+
+
+@media screen and (min-width: 992px) and (orientation: landscape) {
+
+    .logos {
+        display: flex;
+        align-items: center;
+        width: 15%;
+        margin-right: auto;
+    }
+
+    .logo-entero {
+        width: 100%;
+        display: block;
+    }
+
+    .logo-numero {
+        display: none;
+    }
+
+    .div-buscar {
+        width: 38%;
+    }
+
+    .input-buscar {
+        width: 100%;
+        height: 30px;
+        border-radius: 40px;
+        border: none;
+    }
+
+    .enlaces-desktop {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 1%;
+        gap: 10px;
+        margin-right: 5%;
+    }
+
+    .enlaces-desktop ul li {
+        list-style: none;
+        display: inline;
+    }
+
+    .enlaces-desktop ul li a {
+        text-decoration: none;
+        color: var(--color-primario);
+    }
+
+    .menu-rayitas {
+        display: none;
+    }
+
+    .principal {
+        width: 70%;
+        margin: 5px auto;
+        background-color: var(--color-negro);
+        margin-bottom: 2%;
+        filter: opacity(90%);
+    }
+
+    #articulo-1 {
+        grid-area: a1;
+        position: relative;
+    }
+
+    #articulo-1 h2 {
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        border-bottom: var(--color-blanco) 3px solid;
+        color: var(--color-blanco);
+        width: 90%;
+    }
+
+    #articulo-4 {
+        grid-area: a1;
+        position: relative;
+    }
+
+    #articulo-4 h2 {
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        border-bottom: var(--color-blanco) 3px solid;
+        color: var(--color-blanco);
+        width: 90%;
+    }
+
+    #articulo-5 {
+        grid-area: a1;
+        position: relative;
+    }
+
+    #articulo-5 h2 {
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        border-bottom: var(--color-blanco) 3px solid;
+        color: var(--color-blanco);
+        width: 90%;
+    }
+
+    #articulo-2 {
+        grid-area: a2;
+    }
+
+    #articulo-3 {
+        grid-area: a3;
+    }
+
+    #articulo-4 {
+        grid-area: a4;
+    }
+
+    #articulo-5 {
+        grid-area: a5;
+    }
+
+    #articulo-1>img {
+        width: 100%;
+    }
+
+    #articulo-3>img {
+        width: 50%;
+    }
+
+    #articulo-4>img {
+        width: 100%;
+        height: 90%;
+
+    }
+
+    #articulo-5>img {
+        width: 99%;
+        height: 90%;
+    }
+
+
+    .seccion-1 {
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        /*4 columnas*/
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "a1 a1 a2 a2"
+            "a3 a3 a2 a2"
+            "a4 a4 a5 a5";
+        justify-content: space-around;
+        row-gap: 5px;
+        column-gap: 25px;
+
+    }
+
+    #art2-tit {
+        grid-area: t1;
+    }
+
+    #img-1 {
+        grid-area: p1;
+    }
+
+    #img-2 {
+        grid-area: p2;
+    }
+
+    #img-3 {
+        grid-area: p3;
+    }
+
+    #img-4 {
+        grid-area: p4;
+    }
+
+    .img-personajes img {
+        width: 90%;
+        border: none;
+        filter: grayscale(1);
+        transition: filter 0.3s ease, transform 0.3s ease;
+
+    }
+
+    .img-personajes img:hover {
+        width: 90%;
+        border: none;
+        filter: grayscale(0);
+        transform: scale(1.05);
+    }
+
+    #articulo-2 {
+
+        display: grid;
+        grid-template-areas:
+            "t1 t1"
+            "p1 p2"
+            "p3 p4";
+        justify-content: space-around;
+        background-color: var(--color-primario);
+        padding: 15px;
+        row-gap: 5px;
+    }
+
+}
