@@ -1,0 +1,7 @@
+TEMA DEL PROYECTO: "EcoMercado – Tienda de productos ecológicos"
+
+La temática elegida para el proyecto es una página web informativa de una tienda de productos ecológicos llamada "EcoMercado". El objetivo de la web es presentar productos destacados, información básica de la tienda y datos de contacto de forma clara y adaptable a diferentes dispositivos.
+
+El diseño se ha realizado utilizando el sistema de rejillas (Grid System) de Bootstrap 5, definiendo un área de contenido principal y una barra lateral. Además, se han utilizado al menos dos puntos de ruptura (breakpoints) para asegurar la adaptabilidad básica en móviles, tablets y pantallas grandes.
+
+También se ha desarrollado un footer estructurado en tres columnas, donde se incluyen enlaces de interés, redes sociales y datos de contacto, utilizando utilidades de fondo (bg-dark) y espaciado (clases p- y m-) de Bootstrap.

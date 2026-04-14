@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMercado – Proyecto Bootstrap</title>
+
+    <!-- Bootstrap 5 por CDN -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- Hoja de estilos propia para -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <!-- CABECERA -->
+    <header class="bg-success text-white py-3">
+        <div class="container">
+            <h1 class="h3 mb-1 hero-title">EcoMercado</h1>
+            <p class="mb-0">Productos ecológicos y de proximidad</p>
+        </div>
+    </header>
+
+    <!-- LAYOUT PRINCIPAL CON GRID -->
+    <main class="container my-4">
+        <div class="row">
+
+            <!-- CONTENIDO PRINCIPAL -->
+            <section class="col-12 col-md-8 col-lg-9 mb-4">
+                <div class="bg-white p-4 shadow-sm rounded">
+                    <h2 class="h4 mb-3">Productos destacados</h2>
+                    <p>
+                        En EcoMercado ofrecemos frutas, verduras y productos ecológicos 
+                        procedentes de agricultores locales. Nuestro objetivo es 
+                        acercar productos frescos y sostenibles a los consumidores.
+                    </p>
+
+                    <div class="row g-3 mt-3">
+                        <div class="col-12 col-sm-6">
+                            <div class="border rounded p-3 h-100 card-producto bg-light">
+                                <h3 class="h5">Cesta de temporada</h3>
+                                <p class="mb-0">
+                                    Selección semanal de frutas y verduras de temporada, 
+                                    directamente del campo a tu mesa.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="border rounded p-3 h-100 card-producto bg-light">
+                                <h3 class="h5">Lácteos ecológicos</h3>
+                                <p class="mb-0">
+                                    Leche, yogures y quesos procedentes de ganadería sostenible 
+                                    y certificada.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BARRA LATERAL -->
+            <aside class="col-12 col-md-4 col-lg-3 mb-4">
+                <div class="bg-white p-4 shadow-sm rounded">
+                    <h2 class="h5 mb-3">Información rápida</h2>
+                    <ul class="list-unstyled mb-3">
+                        <li><strong>Horario:</strong> L–V 9:00–20:00</li>
+                        <li><strong>Ubicación:</strong> Centro de la ciudad</li>
+                        <li><strong>Envíos:</strong> A domicilio en la zona</li>
+                    </ul>
+                    <h3 class="h6">Próximas ofertas</h3>
+                    <p class="mb-0">
+                        Descuentos en cestas familiares y productos de temporada durante los fines de semana.
+                    </p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- FOOTER EN 3 COLUMNAS -->
+    <footer class="bg-dark text-white mt-5 pt-4 pb-3">
+        <div class="container">
+            <div class="row">
+
+                <!-- Columna 1: Enlaces de interés -->
+                <div class="col-12 col-md-4 mb-3">
+                    <h5>Enlaces de interés</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Productos</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 2: Redes sociales -->
+                <div class="col-12 col-md-4 mb-3">
+                    <h5>Redes sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Facebook</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Twitter</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto / Copyright -->
+                <div class="col-12 col-md-4 mb-3">
+                    <h5>Contacto</h5>
+                    <p class="mb-1">Email: contacto@ecomercado.com</p>
+                    <p class="mb-0">© 2026 EcoMercado. Todos los derechos reservados.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
